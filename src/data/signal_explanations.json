@@ -1,0 +1,242 @@
+{
+  "Netflix": {
+    "explanation": "Netflix shows mixed signals at $96.24 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.0878644,
+    "source": "template"
+  },
+  "Intel": {
+    "explanation": "Intel shows mixed signals at $45.61 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.166491,
+    "source": "template"
+  },
+  "Coca-Cola": {
+    "explanation": "Coca-Cola shows mixed signals at $81.56 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.2325962,
+    "source": "template"
+  },
+  "Disney": {
+    "explanation": "Disney shows mixed signals at $106.04 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.3229444,
+    "source": "template"
+  },
+  "Solana": {
+    "explanation": "Solana shows mixed signals at $83.89 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.4090765,
+    "source": "template"
+  },
+  "XRP": {
+    "explanation": "XRP shows mixed signals at $1.36 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.4937732,
+    "source": "template"
+  },
+  "Dogecoin": {
+    "explanation": "Dogecoin shows mixed signals at $0.09 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.5763612,
+    "source": "template"
+  },
+  "Cardano": {
+    "explanation": "Cardano shows mixed signals at $0.27 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.6442025,
+    "source": "template"
+  },
+  "Avalanche": {
+    "explanation": "Avalanche shows mixed signals at $9.00 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.7296314,
+    "source": "template"
+  },
+  "Chainlink": {
+    "explanation": "Chainlink shows mixed signals at $8.73 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.8389137,
+    "source": "template"
+  },
+  "Polkadot": {
+    "explanation": "Polkadot shows mixed signals at $1.51 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444441.9253857,
+    "source": "template"
+  },
+  "Litecoin": {
+    "explanation": "Litecoin shows mixed signals at $53.61 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.003278,
+    "source": "template"
+  },
+  "Palladium": {
+    "explanation": "Palladium shows mixed signals at $1,854.50 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.072427,
+    "source": "template"
+  },
+  "Corn": {
+    "explanation": "Corn shows mixed signals at $449.75 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.1472638,
+    "source": "template"
+  },
+  "Russell 2000": {
+    "explanation": "Russell 2000 shows mixed signals at $2,632.36 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.2244678,
+    "source": "template"
+  },
+  "GBP/USD": {
+    "explanation": "GBP/USD shows mixed signals at $1.34 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.289315,
+    "source": "template"
+  },
+  "USD/JPY": {
+    "explanation": "USD/JPY shows mixed signals at $156.87 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.3536963,
+    "source": "template"
+  },
+  "AUD/USD": {
+    "explanation": "AUD/USD shows mixed signals at $0.71 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.4257267,
+    "source": "template"
+  },
+  "USD/CHF": {
+    "explanation": "USD/CHF shows mixed signals at $0.77 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444442.5072534,
+    "source": "template"
+  },
+  "Platinum": {
+    "explanation": "Platinum is bullish at $2,381.50 with a confidence of 93%. Rsi at 45 leans bearish. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.404544,
+    "source": "template"
+  },
+  "BTC": {
+    "explanation": "BTC is bullish at $66,423.80 with a confidence of 86%. Rsi at 43 leans bearish. Social media is bullish, with elevated social buzz. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty. Target $95,000 (+43.0%), stop-loss $58,900 (-11.3%).",
+    "timestamp": 1772444456.4834304,
+    "source": "template"
+  },
+  "Copper": {
+    "explanation": "Copper is bullish at $6.06 with a confidence of 76%. Rsi at 55 leans bullish. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty. Target $8 (+23.8%), stop-loss $5 (-20.1%).",
+    "timestamp": 1772444456.552441,
+    "source": "template"
+  },
+  "Oil": {
+    "explanation": "Oil is bullish at $72.05 with a confidence of 69%. Rsi at 63 leans bullish. News flow is positive. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty. Target $85 (+18.0%), stop-loss $62 (-14.3%).",
+    "timestamp": 1772444456.621911,
+    "source": "template"
+  },
+  "NASDAQ": {
+    "explanation": "NASDAQ is bullish at $22,668.21 with a confidence of 82%. Rsi at 43 leans bearish technical indicators are aligned bullish. Social media is bullish. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.692526,
+    "source": "template"
+  },
+  "S&P 500": {
+    "explanation": "S&P 500 is strongly bullish at $6,878.88 with a confidence of 78%. Rsi at 64 leans bullish technical indicators are aligned bullish. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.7803898,
+    "source": "template"
+  },
+  "Gold": {
+    "explanation": "Gold shows mixed signals at $5,408.40 with 55% confidence. Rsi at 65 leans bullish. With elevated social buzz. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.8581834,
+    "source": "template"
+  },
+  "Silver": {
+    "explanation": "Silver shows mixed signals at $95.74 with 57% confidence. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.9287846,
+    "source": "template"
+  },
+  "EUR/USD": {
+    "explanation": "EUR/USD is bullish at $1.17 with a confidence of 65%. Rsi at 28 indicates oversold conditions. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444456.9988399,
+    "source": "template"
+  },
+  "Wheat": {
+    "explanation": "Wheat shows mixed signals at $594.25 with 46% confidence. Technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty. Target $700 (+17.8%), stop-loss $494 (-16.9%).",
+    "timestamp": 1772444457.0714204,
+    "source": "template"
+  },
+  "Dow Jones": {
+    "explanation": "Dow Jones shows mixed signals at $48,977.92 with 47% confidence. Rsi at 34 leans bearish technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.1410067,
+    "source": "template"
+  },
+  "ETH": {
+    "explanation": "ETH shows mixed signals at $1,959.23 with 33% confidence. Rsi at 43 leans bearish. Social media is bullish, with elevated social buzz. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.241774,
+    "source": "template"
+  },
+  "Natural Gas": {
+    "explanation": "Natural Gas shows mixed signals at $3.02 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.3564951,
+    "source": "template"
+  },
+  "Apple": {
+    "explanation": "Apple shows mixed signals at $264.18 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.4302537,
+    "source": "template"
+  },
+  "Microsoft": {
+    "explanation": "Microsoft shows mixed signals at $392.74 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.5133524,
+    "source": "template"
+  },
+  "NVIDIA": {
+    "explanation": "NVIDIA shows mixed signals at $177.19 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.613046,
+    "source": "template"
+  },
+  "Google": {
+    "explanation": "Google shows mixed signals at $311.76 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.7029004,
+    "source": "template"
+  },
+  "Amazon": {
+    "explanation": "Amazon shows mixed signals at $210.00 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.7942092,
+    "source": "template"
+  },
+  "Meta": {
+    "explanation": "Meta shows mixed signals at $648.18 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.8879552,
+    "source": "template"
+  },
+  "Tesla": {
+    "explanation": "Tesla shows mixed signals at $402.51 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444457.973666,
+    "source": "template"
+  },
+  "JPMorgan": {
+    "explanation": "JPMorgan shows mixed signals at $300.30 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.046671,
+    "source": "template"
+  },
+  "Berkshire": {
+    "explanation": "Berkshire shows mixed signals at $504.95 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.1177514,
+    "source": "template"
+  },
+  "UnitedHealth": {
+    "explanation": "UnitedHealth shows mixed signals at $293.27 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.195125,
+    "source": "template"
+  },
+  "Visa": {
+    "explanation": "Visa shows mixed signals at $320.14 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.2804806,
+    "source": "template"
+  },
+  "Johnson & Johnson": {
+    "explanation": "Johnson & Johnson shows mixed signals at $248.43 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.3589847,
+    "source": "template"
+  },
+  "Walmart": {
+    "explanation": "Walmart shows mixed signals at $127.95 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.4295146,
+    "source": "template"
+  },
+  "Mastercard": {
+    "explanation": "Mastercard shows mixed signals at $517.21 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.5145757,
+    "source": "template"
+  },
+  "ExxonMobil": {
+    "explanation": "ExxonMobil shows mixed signals at $152.50 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.6181033,
+    "source": "template"
+  },
+  "AMD": {
+    "explanation": "AMD shows mixed signals at $200.21 with 0% confidence. Rsi at 0 indicates oversold conditions technical indicators are mixed. Risk-on macro environment supports growth assets. Geopolitical risk is extreme, adding uncertainty.",
+    "timestamp": 1772444458.6984499,
+    "source": "template"
+  }
+}

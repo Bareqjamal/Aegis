@@ -1,0 +1,155 @@
+# =============================================================================
+# Project Aegis — Docker Compose (Production)
+# =============================================================================
+# Start:  docker compose up -d
+# Logs:   docker compose logs -f aegis
+# Stop:   docker compose down
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Streamlit Dashboard
+  # ---------------------------------------------------------------------------
+  aegis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aegis-terminal
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    environment:
+      - PYTHONPATH=/app
+      # Optional API keys (none required for core functionality)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      # SMTP for email verification (optional)
+      - AEGIS_SMTP_HOST=${AEGIS_SMTP_HOST:-}
+      - AEGIS_SMTP_PORT=${AEGIS_SMTP_PORT:-587}
+      - AEGIS_SMTP_USER=${AEGIS_SMTP_USER:-}
+      - AEGIS_SMTP_PASS=${AEGIS_SMTP_PASS:-}
+      - AEGIS_SMTP_FROM=${AEGIS_SMTP_FROM:-}
+    volumes:
+      # Persist ALL stateful data across container restarts
+      - aegis-data:/app/src/data
+      - aegis-memory:/app/memory
+      - aegis-research:/app/research_outputs
+      - aegis-users:/app/users
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 40s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: "2.0"
+        reservations:
+          memory: 512M
+          cpus: "0.5"
+
+  # ---------------------------------------------------------------------------
+  # Aegis Brain — Background scheduler + API (FastAPI + APScheduler)
+  # Runs brain cycles every 30min, sends morning emails at 7:00 UTC
+  # ---------------------------------------------------------------------------
+  aegis-brain:
+    build:
+      context: .
+      dockerfile: Dockerfile.brain
+    container_name: aegis-brain
+    ports:
+      - "${BRAIN_PORT:-8502}:8502"
+    environment:
+      - PYTHONPATH=/app
+      - BRAIN_INTERVAL_MIN=${BRAIN_INTERVAL_MIN:-30}
+      - BRAIN_API_PORT=8502
+      - MORNING_EMAIL_HOUR=${MORNING_EMAIL_HOUR:-7}
+      - MORNING_EMAIL_MIN=${MORNING_EMAIL_MIN:-0}
+      # Optional API keys (passed through to brain cycle)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      # SMTP for morning emails
+      - AEGIS_SMTP_HOST=${AEGIS_SMTP_HOST:-}
+      - AEGIS_SMTP_PORT=${AEGIS_SMTP_PORT:-587}
+      - AEGIS_SMTP_USER=${AEGIS_SMTP_USER:-}
+      - AEGIS_SMTP_PASS=${AEGIS_SMTP_PASS:-}
+      - AEGIS_SMTP_FROM=${AEGIS_SMTP_FROM:-}
+    volumes:
+      # SAME volumes as aegis — shared JSON state files
+      - aegis-data:/app/src/data
+      - aegis-memory:/app/memory
+      - aegis-research:/app/research_outputs
+      - aegis-users:/app/users
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8502/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 20s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "1.0"
+        reservations:
+          memory: 256M
+          cpus: "0.25"
+
+  # ---------------------------------------------------------------------------
+  # Redis — Cache layer (FUTURE: wire into yfinance caching)
+  # Uncomment when redis integration is implemented in the codebase
+  # ---------------------------------------------------------------------------
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: aegis-redis
+  #   ports:
+  #     - "${REDIS_PORT:-6379}:6379"
+  #   volumes:
+  #     - aegis-redis:/data
+  #   command: redis-server --appendonly yes --maxmemory 128mb --maxmemory-policy allkeys-lru
+  #   restart: unless-stopped
+  #   healthcheck:
+  #     test: ["CMD", "redis-cli", "ping"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 3
+
+  # ---------------------------------------------------------------------------
+  # PostgreSQL — Future multi-user data store
+  # Uncomment when database migration is implemented
+  # ---------------------------------------------------------------------------
+  # postgres:
+  #   image: postgres:16-alpine
+  #   container_name: aegis-postgres
+  #   environment:
+  #     POSTGRES_USER: ${POSTGRES_USER:-aegis}
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aegis_secret}
+  #     POSTGRES_DB: ${POSTGRES_DB:-aegis_db}
+  #   ports:
+  #     - "${POSTGRES_PORT:-5432}:5432"
+  #   volumes:
+  #     - aegis-postgres:/var/lib/postgresql/data
+  #   restart: unless-stopped
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aegis} -d ${POSTGRES_DB:-aegis_db}"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+volumes:
+  aegis-data:
+    driver: local
+  aegis-memory:
+    driver: local
+  aegis-research:
+    driver: local
+  aegis-users:
+    driver: local
+  # Uncomment when services are enabled:
+  # aegis-redis:
+  #   driver: local
+  # aegis-postgres:
+  #   driver: local

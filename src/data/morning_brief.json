@@ -1,0 +1,398 @@
+{
+  "timestamp": "2026-03-02T09:21:16.108847+00:00",
+  "date_display": "Monday, March 02, 2026",
+  "headline": "📈 Markets are Bullish — 🟢 RISK_ON regime active",
+  "market_tone": "Bullish",
+  "tone_emoji": "📈",
+  "regime": {
+    "name": "RISK_ON",
+    "icon": "🟢",
+    "description": "Markets are confident. Equities favored, safe havens less attractive.",
+    "confidence": 0.5
+  },
+  "risk": {
+    "level": "EXTREME",
+    "icon": "🔴",
+    "geo_events": 350,
+    "dominant_events": [
+      "TARIFFS_TRADE",
+      "WAR_CONFLICT",
+      "CENTRAL_BANK",
+      "ENERGY_SUPPLY"
+    ]
+  },
+  "signals_overview": {
+    "total": 12,
+    "buy": 8,
+    "sell": 0,
+    "neutral": 4
+  },
+  "top_picks": [
+    {
+      "asset": "Platinum",
+      "signal": "BUY",
+      "confidence": 81.2,
+      "score": 35,
+      "price": 2420.6,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Strong technical setup (81.2% confidence). Geopolitical events are supportive."
+    },
+    {
+      "asset": "BTC",
+      "signal": "STRONG BUY",
+      "confidence": 75.1,
+      "score": 75,
+      "price": 5397.2,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Strong technical setup (75.1% confidence). Geopolitical events are supportive."
+    },
+    {
+      "asset": "Copper",
+      "signal": "BUY",
+      "confidence": 66.2,
+      "score": 45,
+      "price": 6.07,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Moderate technical signal (66.2%). RISK_ON regime favors Copper. Geopolitical headwinds present."
+    },
+    {
+      "asset": "Oil",
+      "signal": "BUY",
+      "confidence": 66.0,
+      "score": 35,
+      "price": 95.4,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Moderate technical signal (66.0%). Geopolitical events are supportive."
+    },
+    {
+      "asset": "NASDAQ",
+      "signal": "BUY",
+      "confidence": 65.3,
+      "score": 58,
+      "price": 22668.21,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Moderate technical signal (65.3%). RISK_ON regime favors NASDAQ. Geopolitical headwinds present."
+    },
+    {
+      "asset": "S&P 500",
+      "signal": "STRONG BUY",
+      "confidence": 65.0,
+      "score": 70,
+      "price": 5377.7,
+      "change_pct": 0,
+      "verdict": "BUY NOW",
+      "color": "#3fb950",
+      "emoji": "🟢",
+      "reason": "Moderate technical signal (65.0%). RISK_ON regime favors S&P 500. Geopolitical headwinds present."
+    },
+    {
+      "asset": "Gold",
+      "signal": "NEUTRAL",
+      "confidence": 64.4,
+      "score": 25,
+      "price": 5417.7,
+      "change_pct": 0,
+      "verdict": "WAIT",
+      "color": "#6e7681",
+      "emoji": "⚪",
+      "reason": "Moderate technical signal (64.4%). RISK_ON regime is headwind for Gold. Geopolitical events are supportive."
+    },
+    {
+      "asset": "Silver",
+      "signal": "NEUTRAL",
+      "confidence": 63.7,
+      "score": 33,
+      "price": 1945.55,
+      "change_pct": 0,
+      "verdict": "WAIT",
+      "color": "#6e7681",
+      "emoji": "⚪",
+      "reason": "Moderate technical signal (63.7%). Geopolitical events are supportive."
+    },
+    {
+      "asset": "EUR/USD",
+      "signal": "BUY",
+      "confidence": 53.8,
+      "score": 35,
+      "price": 1.18,
+      "change_pct": 0,
+      "verdict": "LEANING BUY",
+      "color": "#20c997",
+      "emoji": "🔵",
+      "reason": "Moderate technical signal (53.8%). Geopolitical headwinds present."
+    },
+    {
+      "asset": "Wheat",
+      "signal": "NEUTRAL",
+      "confidence": 48.0,
+      "score": 10,
+      "price": 594.5,
+      "change_pct": 0,
+      "verdict": "WAIT",
+      "color": "#6e7681",
+      "emoji": "⚪",
+      "reason": "Weak/uncertain signal (48.0%). Geopolitical events are supportive."
+    },
+    {
+      "asset": "Dow Jones",
+      "signal": "NEUTRAL",
+      "confidence": 47.4,
+      "score": 13,
+      "price": 48977.92,
+      "change_pct": 0,
+      "verdict": "WAIT",
+      "color": "#6e7681",
+      "emoji": "⚪",
+      "reason": "Weak/uncertain signal (47.4%)."
+    },
+    {
+      "asset": "ETH",
+      "signal": "BUY",
+      "confidence": 36.8,
+      "score": 35,
+      "price": 5397.2,
+      "change_pct": 0,
+      "verdict": "LEANING BUY",
+      "color": "#20c997",
+      "emoji": "🔵",
+      "reason": "Weak/uncertain signal (36.8%). RISK_ON regime favors ETH. Geopolitical events are supportive."
+    }
+  ],
+  "watchlist_summary": [
+    {
+      "asset": "Platinum",
+      "signal": "BUY",
+      "confidence": 81.2,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 2420.6,
+      "change_pct": 0
+    },
+    {
+      "asset": "BTC",
+      "signal": "STRONG BUY",
+      "confidence": 75.1,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 5397.2,
+      "change_pct": 0
+    },
+    {
+      "asset": "Copper",
+      "signal": "BUY",
+      "confidence": 66.2,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 6.07,
+      "change_pct": 0
+    },
+    {
+      "asset": "Oil",
+      "signal": "BUY",
+      "confidence": 66.0,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 95.4,
+      "change_pct": 0
+    },
+    {
+      "asset": "NASDAQ",
+      "signal": "BUY",
+      "confidence": 65.3,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 22668.21,
+      "change_pct": 0
+    },
+    {
+      "asset": "S&P 500",
+      "signal": "STRONG BUY",
+      "confidence": 65.0,
+      "verdict": "BUY NOW",
+      "emoji": "🟢",
+      "price": 5377.7,
+      "change_pct": 0
+    },
+    {
+      "asset": "Gold",
+      "signal": "NEUTRAL",
+      "confidence": 64.4,
+      "verdict": "WAIT",
+      "emoji": "⚪",
+      "price": 5417.7,
+      "change_pct": 0
+    },
+    {
+      "asset": "Silver",
+      "signal": "NEUTRAL",
+      "confidence": 63.7,
+      "verdict": "WAIT",
+      "emoji": "⚪",
+      "price": 1945.55,
+      "change_pct": 0
+    },
+    {
+      "asset": "EUR/USD",
+      "signal": "BUY",
+      "confidence": 53.8,
+      "verdict": "LEANING BUY",
+      "emoji": "🔵",
+      "price": 1.18,
+      "change_pct": 0
+    },
+    {
+      "asset": "Wheat",
+      "signal": "NEUTRAL",
+      "confidence": 48.0,
+      "verdict": "WAIT",
+      "emoji": "⚪",
+      "price": 594.5,
+      "change_pct": 0
+    },
+    {
+      "asset": "Dow Jones",
+      "signal": "NEUTRAL",
+      "confidence": 47.4,
+      "verdict": "WAIT",
+      "emoji": "⚪",
+      "price": 48977.92,
+      "change_pct": 0
+    },
+    {
+      "asset": "ETH",
+      "signal": "BUY",
+      "confidence": 36.8,
+      "verdict": "LEANING BUY",
+      "emoji": "🔵",
+      "price": 5397.2,
+      "change_pct": 0
+    }
+  ],
+  "calendar": [
+    {
+      "name": "Non-Farm Payrolls (NFP)",
+      "icon": "👷",
+      "countdown": "4 days",
+      "date": "Fri Mar 06, 13:30 UTC",
+      "impact": 3,
+      "assets": [
+        "Gold",
+        "S&P 500",
+        "EUR/USD",
+        "BTC"
+      ]
+    },
+    {
+      "name": "Consumer Price Index (CPI)",
+      "icon": "📊",
+      "countdown": "8 days",
+      "date": "Tue Mar 10, 13:30 UTC",
+      "impact": 3,
+      "assets": [
+        "Gold",
+        "Silver",
+        "S&P 500",
+        "NASDAQ",
+        "BTC",
+        "EUR/USD"
+      ]
+    },
+    {
+      "name": "ECB Interest Rate Decision",
+      "icon": "🇪🇺",
+      "countdown": "10 days",
+      "date": "Thu Mar 12, 13:15 UTC",
+      "impact": 3,
+      "assets": [
+        "EUR/USD",
+        "Gold",
+        "S&P 500"
+      ]
+    }
+  ],
+  "social_pulse": {
+    "available": true,
+    "movers": [
+      {
+        "asset": "NASDAQ",
+        "score": 0.71,
+        "label": "VERY_BULLISH",
+        "buzz": "MEDIUM",
+        "reddit_mentions": 0
+      },
+      {
+        "asset": "BTC",
+        "score": 0.5,
+        "label": "VERY_BULLISH",
+        "buzz": "HIGH",
+        "reddit_mentions": 25
+      },
+      {
+        "asset": "ETH",
+        "score": 0.36,
+        "label": "BULLISH",
+        "buzz": "HIGH",
+        "reddit_mentions": 6
+      },
+      {
+        "asset": "SP500",
+        "score": 0.19,
+        "label": "BULLISH",
+        "buzz": "HIGH",
+        "reddit_mentions": 1
+      },
+      {
+        "asset": "Gold",
+        "score": 0.15,
+        "label": "BULLISH",
+        "buzz": "HIGH",
+        "reddit_mentions": 10
+      }
+    ],
+    "influencer_alerts": [
+      {
+        "asset": "BTC",
+        "type": "INFLUENCER",
+        "influencer": "Donald Trump",
+        "message": "Donald Trump activity detected — bullish for BTC (impact: +0.93)",
+        "score": 0.93,
+        "alert_level": "HIGH"
+      },
+      {
+        "asset": "BTC",
+        "type": "INFLUENCER",
+        "influencer": "Elon Musk",
+        "message": "Elon Musk activity detected — bullish for BTC (impact: +5.00)",
+        "score": 5.0,
+        "alert_level": "HIGH"
+      },
+      {
+        "asset": "BTC",
+        "type": "INFLUENCER",
+        "influencer": "Michael Saylor",
+        "message": "Michael Saylor activity detected — bullish for BTC (impact: +1.05)",
+        "score": 1.05,
+        "alert_level": "HIGH"
+      }
+    ],
+    "total_alerts": 31,
+    "high_alerts": 31,
+    "summary": "Scanned 6 influencers + 8 subreddits in 86.8s. 31 alerts (31 high priority)."
+  },
+  "key_takeaway": "Strongest signal: 🟢 Platinum (BUY, 81.2% confidence). Consider entering if your risk tolerance allows."
+}

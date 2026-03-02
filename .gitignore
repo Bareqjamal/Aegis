@@ -1,0 +1,66 @@
+# =============================================================================
+# Project Aegis — .gitignore
+# =============================================================================
+
+# -- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# -- Environment & Secrets ---------------------------------------------------
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# -- User Data (contains password hashes, sessions, PII) --------------------
+users/
+
+# -- IDE & OS ----------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -- Streamlit ---------------------------------------------------------------
+.streamlit/secrets.toml
+
+# -- Logs & Temp -------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+agent_logs.txt
+brain_logs.txt
+token_usage.json
+nul
+
+# -- Claude Code session data ------------------------------------------------
+.claude/
+
+# -- Cached market data (regenerated at runtime) ----------------------------
+src/data/watchlist_summary.json
+src/data/price_cache.json
+src/data/social_sentiment.json
+src/data/news_impact.json
+src/data/geopolitical_analysis.json
+src/data/macro_regime.json
+src/data/brain_cycle_report.json
+src/data/news_*.json
+src/data/chart_*.json
+
+# -- Research outputs (generated, can be large) -----------------------------
+research_outputs/
+
+# -- Node (if Tailwind build added later) ------------------------------------
+node_modules/
+package-lock.json

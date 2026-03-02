@@ -1,0 +1,36 @@
+# =============================================================================
+# Project Aegis — Python Project Configuration
+# =============================================================================
+
+[project]
+name = "project-aegis"
+version = "6.0.0"
+description = "AI Trading Terminal — Bloomberg-style command center for retail trading"
+requires-python = ">=3.9"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+src = ["src", "dashboard", "tests"]
+
+[tool.ruff.lint]
+# Start lenient — tighten over time
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (existing code is long)
+    "E402",  # module level import not at top (Streamlit pattern)
+    "F841",  # local variable assigned but never used
+]
+
+[tool.ruff.lint.per-file-ignores]
+"dashboard/app.py" = ["E", "F", "I"]  # Legacy 7300-line file — lint later
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"

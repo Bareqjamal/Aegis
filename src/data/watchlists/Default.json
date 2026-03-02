@@ -1,0 +1,110 @@
+{
+  "Gold": {
+    "ticker": "GC=F",
+    "support": 4405.0,
+    "target": 5400.0,
+    "stop_pct": 0.03,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "BTC": {
+    "ticker": "BTC-USD",
+    "support": 62000.0,
+    "target": 95000.0,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "crypto",
+    "enabled": true
+  },
+  "ETH": {
+    "ticker": "ETH-USD",
+    "support": 2200.0,
+    "target": 4500.0,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Silver": {
+    "ticker": "SI=F",
+    "support": 62.0,
+    "target": 95.0,
+    "stop_pct": 0.04,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Oil": {
+    "ticker": "CL=F",
+    "support": 65.0,
+    "target": 85.0,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Natural Gas": {
+    "ticker": "NG=F",
+    "support": 2.8,
+    "target": 4.5,
+    "stop_pct": 0.06,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "S&P 500": {
+    "ticker": "^GSPC",
+    "support": 5200.0,
+    "target": 6500.0,
+    "stop_pct": 0.03,
+    "macro_bias": "bullish",
+    "category": "index",
+    "enabled": true
+  },
+  "NASDAQ": {
+    "ticker": "^IXIC",
+    "support": 16000.0,
+    "target": 20000.0,
+    "stop_pct": 0.04,
+    "macro_bias": "bullish",
+    "category": "index",
+    "enabled": true
+  },
+  "Copper": {
+    "ticker": "HG=F",
+    "support": 5.1,
+    "target": 7.5,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Platinum": {
+    "ticker": "PL=F",
+    "support": 900.0,
+    "target": 1200.0,
+    "stop_pct": 0.04,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Wheat": {
+    "ticker": "ZW=F",
+    "support": 520.0,
+    "target": 700.0,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "EUR/USD": {
+    "ticker": "EURUSD=X",
+    "support": 1.05,
+    "target": 1.15,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  }
+}

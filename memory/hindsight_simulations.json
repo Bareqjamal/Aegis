@@ -1,0 +1,107 @@
+{
+  "simulations": [
+    {
+      "id": "SIM-20260209080130-Gold",
+      "timestamp": "2026-02-09T08:01:30.565675+00:00",
+      "asset": "Gold",
+      "ticker": "GC=F",
+      "hours_back": 48,
+      "simulated_date": "2026-02-07 08:01",
+      "predicted_label": "NEUTRAL",
+      "predicted_score": 15,
+      "predicted_price": 4951.2,
+      "actual_price": 5024.6,
+      "pct_change": 0.0,
+      "max_drawdown": -0.72,
+      "max_upside": 0.88,
+      "outcome": "correct",
+      "grade": "B",
+      "note": "NEUTRAL correct: price stayed flat (+0.00%)",
+      "tech_snapshot": {
+        "rsi": 59.69,
+        "macd_bullish": false,
+        "golden_cross": false,
+        "volatility": 26.3
+      }
+    },
+    {
+      "id": "SIM-20260209080139-BTC",
+      "timestamp": "2026-02-09T08:01:39.985819+00:00",
+      "asset": "BTC",
+      "ticker": "BTC-USD",
+      "hours_back": 48,
+      "simulated_date": "2026-02-07 08:01",
+      "predicted_label": "NEUTRAL",
+      "predicted_score": 30,
+      "predicted_price": 70555.39,
+      "actual_price": 70396.03,
+      "pct_change": 1.61,
+      "max_drawdown": -2.77,
+      "max_upside": 4.22,
+      "outcome": "correct",
+      "grade": "B",
+      "note": "NEUTRAL correct: price stayed flat (+1.61%)",
+      "tech_snapshot": {
+        "rsi": 28.12,
+        "macd_bullish": false,
+        "golden_cross": false,
+        "volatility": 53.6
+      }
+    },
+    {
+      "id": "SIM-20260209080140-ETH",
+      "timestamp": "2026-02-09T08:01:40.379338+00:00",
+      "asset": "ETH",
+      "ticker": "ETH-USD",
+      "hours_back": 48,
+      "simulated_date": "2026-02-07 08:01",
+      "predicted_label": "BUY",
+      "predicted_score": 35,
+      "predicted_price": 2063.39,
+      "actual_price": 2066.04,
+      "pct_change": -1.17,
+      "max_drawdown": -4.53,
+      "max_upside": 2.75,
+      "outcome": "neutral",
+      "grade": "C",
+      "note": "BUY signal inconclusive: price moved -1.17%",
+      "tech_snapshot": {
+        "rsi": 27.05,
+        "macd_bullish": false,
+        "golden_cross": false,
+        "volatility": 79.9
+      }
+    },
+    {
+      "id": "SIM-20260209080140-Silver",
+      "timestamp": "2026-02-09T08:01:40.730887+00:00",
+      "asset": "Silver",
+      "ticker": "SI=F",
+      "hours_back": 48,
+      "simulated_date": "2026-02-07 08:01",
+      "predicted_label": "NEUTRAL",
+      "predicted_score": 20,
+      "predicted_price": 76.74,
+      "actual_price": 80.47,
+      "pct_change": 0.0,
+      "max_drawdown": -2.95,
+      "max_upside": 2.06,
+      "outcome": "correct",
+      "grade": "B",
+      "note": "NEUTRAL correct: price stayed flat (+0.00%)",
+      "tech_snapshot": {
+        "rsi": 44.41,
+        "macd_bullish": false,
+        "golden_cross": false,
+        "volatility": 68.5
+      }
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "correct": 3,
+    "incorrect": 0,
+    "neutral": 1,
+    "accuracy": 100.0
+  }
+}

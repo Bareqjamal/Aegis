@@ -1,0 +1,217 @@
+[
+  {
+    "timestamp": "2026-02-19T13:48:25.236045+00:00",
+    "date": "2026-02-19",
+    "summary": "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks.",
+    "efficiency_tips": [
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 1,
+    "warning_count": 0,
+    "agent_health": {
+      "Market Scanner": "HEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "HEALTHY",
+      "Market Discovery Agent": "HEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-02-23T12:42:58.693209+00:00",
+    "date": "2026-02-23",
+    "summary": "217 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "217 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 217,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "HEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-02-25T12:48:06.769113+00:00",
+    "date": "2026-02-25",
+    "summary": "221 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "221 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 221,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "HEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T10:01:43.581579+00:00",
+    "date": "2026-02-27",
+    "summary": "233 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "233 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 233,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "HEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-02-28T10:32:39.043148+00:00",
+    "date": "2026-02-28",
+    "summary": "274 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "274 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 274,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "HEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T02:23:52.467353+00:00",
+    "date": "2026-03-01",
+    "summary": "497 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "497 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Chart Generator Agent, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 497,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "UNHEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  },
+  {
+    "timestamp": "2026-03-02T00:04:37.942027+00:00",
+    "date": "2026-03-02",
+    "summary": "826 errors today — investigate root causes to prevent recurrence.",
+    "efficiency_tips": [
+      "826 errors today — investigate root causes to prevent recurrence.",
+      "Unhealthy agents: Market Scanner, Chart Generator Agent, Market Discovery Agent — needs debugging.",
+      "Idle agents: Reasoning & Logic Explainer, UI/UX Designer, Chief Monitor (Supervisor), Real-Time Monitor, Autonomous Decision Engine, Confidence Score Engine, Hindsight Learning Simulator — could be used for improvement tasks."
+    ],
+    "budget_used_pct": 0.0,
+    "errors_today": 826,
+    "warning_count": 1,
+    "agent_health": {
+      "Market Scanner": "UNHEALTHY",
+      "Signal Analyst": "DEGRADED",
+      "Macro Researcher": "HEALTHY",
+      "Implementation Engineer": "HEALTHY",
+      "Reasoning & Logic Explainer": "HEALTHY",
+      "UI/UX Designer": "HEALTHY",
+      "Strategy & HR Agent": "HEALTHY",
+      "Chief Monitor (Supervisor)": "HEALTHY",
+      "News Intelligence Agent": "HEALTHY",
+      "Chart Generator Agent": "UNHEALTHY",
+      "Market Discovery Agent": "UNHEALTHY",
+      "Real-Time Monitor": "HEALTHY",
+      "Autonomous Decision Engine": "HEALTHY",
+      "Market Learning Agent": "HEALTHY",
+      "Confidence Score Engine": "HEALTHY",
+      "Hindsight Learning Simulator": "HEALTHY"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+# =============================================================================
+# Project Aegis — Python Dependencies (Pinned)
+# =============================================================================
+# Install: pip install -r requirements.txt
+# Update:  pip install --upgrade -r requirements.txt
+# =============================================================================
+
+# -- Dashboard & UI ----------------------------------------------------------
+streamlit==1.54.0
+streamlit-autorefresh==1.0.1
+plotly==6.5.2
+
+# -- Data & Analysis ---------------------------------------------------------
+pandas==2.3.3
+numpy==2.4.2
+yfinance==1.1.0
+scipy==1.17.0
+
+# -- News & Web --------------------------------------------------------------
+feedparser==6.0.12
+requests==2.32.5              # Also used by telegram_notifier.py (no python-telegram-bot needed)
+
+# -- System & Monitoring -----------------------------------------------------
+psutil==7.2.2
+
+# -- Strategy Optimization ---------------------------------------------------
+optuna==4.7.0
+
+# -- Backend Server (Brain Runner + API) ------------------------------------
+fastapi==0.115.0
+uvicorn==0.34.0
+apscheduler==3.10.4

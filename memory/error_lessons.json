@@ -1,0 +1,31 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "timestamp": "2026-02-08T11:57:33.548914+00:00",
+      "category": "coding",
+      "what_happened": "yfinance CSV has 3-row multi-level header (Price, Ticker, Date). read_csv with parse_dates failed because Ticker row was read as data.",
+      "root_cause": "yfinance changed its CSV export format to include a Ticker sub-header row.",
+      "prevention_rule": "When loading yfinance CSVs, always use header=0, skiprows=[1,2] to skip the Ticker and Date sub-header rows.",
+      "related_ticket": "AEGIS-004"
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-02-08T12:27:18.189023+00:00",
+      "category": "data",
+      "what_happened": "Silver futures (SI=F) support/target were set to spot-price levels ($28.50/$38.00) but SI=F trades at ~$76. First scan produced nonsensical R:R of -0.8:1.",
+      "root_cause": "Confused silver spot price with futures contract price.",
+      "prevention_rule": "Always verify current price BEFORE setting support/target levels in the watchlist. Run a quick yf.download sanity check.",
+      "related_ticket": "AEGIS-013"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-02-19T13:57:35.308322+00:00",
+      "category": "data",
+      "what_happened": "Scanner failed to fetch Gold (GC=F): [Errno 22] Invalid argument",
+      "root_cause": "OSError",
+      "prevention_rule": "Check yfinance connectivity and ticker validity for GC=F.",
+      "related_ticket": "AEGIS-011"
+    }
+  ]
+}

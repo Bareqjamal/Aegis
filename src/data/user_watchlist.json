@@ -1,0 +1,434 @@
+{
+  "Gold": {
+    "ticker": "GC=F",
+    "support": 4405.00,
+    "target": 5400.00,
+    "stop_pct": 0.03,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "BTC": {
+    "ticker": "BTC-USD",
+    "support": 62000.00,
+    "target": 95000.00,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "crypto",
+    "enabled": true
+  },
+  "ETH": {
+    "ticker": "ETH-USD",
+    "support": 2200.00,
+    "target": 4500.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Silver": {
+    "ticker": "SI=F",
+    "support": 62.00,
+    "target": 95.00,
+    "stop_pct": 0.04,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Oil": {
+    "ticker": "CL=F",
+    "support": 65.00,
+    "target": 85.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Natural Gas": {
+    "ticker": "NG=F",
+    "support": 2.80,
+    "target": 4.50,
+    "stop_pct": 0.06,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "S&P 500": {
+    "ticker": "^GSPC",
+    "support": 5200.00,
+    "target": 6500.00,
+    "stop_pct": 0.03,
+    "macro_bias": "bullish",
+    "category": "index",
+    "enabled": true
+  },
+  "NASDAQ": {
+    "ticker": "^IXIC",
+    "support": 16000.00,
+    "target": 20000.00,
+    "stop_pct": 0.04,
+    "macro_bias": "bullish",
+    "category": "index",
+    "enabled": true
+  },
+  "Copper": {
+    "ticker": "HG=F",
+    "support": 5.10,
+    "target": 7.50,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Platinum": {
+    "ticker": "PL=F",
+    "support": 900.00,
+    "target": 1200.00,
+    "stop_pct": 0.04,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Wheat": {
+    "ticker": "ZW=F",
+    "support": 520.00,
+    "target": 700.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "EUR/USD": {
+    "ticker": "EURUSD=X",
+    "support": 1.05,
+    "target": 1.15,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  },
+  "Apple": {
+    "ticker": "AAPL",
+    "support": 150.00,
+    "target": 220.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Microsoft": {
+    "ticker": "MSFT",
+    "support": 350.00,
+    "target": 480.00,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "stock",
+    "enabled": true
+  },
+  "NVIDIA": {
+    "ticker": "NVDA",
+    "support": 90.00,
+    "target": 160.00,
+    "stop_pct": 0.05,
+    "macro_bias": "bullish",
+    "category": "stock",
+    "enabled": true
+  },
+  "Google": {
+    "ticker": "GOOGL",
+    "support": 150.00,
+    "target": 210.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Amazon": {
+    "ticker": "AMZN",
+    "support": 170.00,
+    "target": 230.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Meta": {
+    "ticker": "META",
+    "support": 450.00,
+    "target": 650.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Tesla": {
+    "ticker": "TSLA",
+    "support": 200.00,
+    "target": 400.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "JPMorgan": {
+    "ticker": "JPM",
+    "support": 190.00,
+    "target": 260.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Berkshire": {
+    "ticker": "BRK-B",
+    "support": 400.00,
+    "target": 500.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "UnitedHealth": {
+    "ticker": "UNH",
+    "support": 450.00,
+    "target": 600.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Visa": {
+    "ticker": "V",
+    "support": 270.00,
+    "target": 340.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Johnson & Johnson": {
+    "ticker": "JNJ",
+    "support": 140.00,
+    "target": 180.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Walmart": {
+    "ticker": "WMT",
+    "support": 75.00,
+    "target": 100.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Mastercard": {
+    "ticker": "MA",
+    "support": 450.00,
+    "target": 560.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "ExxonMobil": {
+    "ticker": "XOM",
+    "support": 95.00,
+    "target": 130.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "support": 100.00,
+    "target": 180.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Netflix": {
+    "ticker": "NFLX",
+    "support": 800.00,
+    "target": 1100.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Intel": {
+    "ticker": "INTC",
+    "support": 18.00,
+    "target": 30.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Coca-Cola": {
+    "ticker": "KO",
+    "support": 55.00,
+    "target": 70.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Disney": {
+    "ticker": "DIS",
+    "support": 90.00,
+    "target": 130.00,
+    "stop_pct": 0.05,
+    "macro_bias": "neutral",
+    "category": "stock",
+    "enabled": true
+  },
+  "Solana": {
+    "ticker": "SOL-USD",
+    "support": 100.00,
+    "target": 300.00,
+    "stop_pct": 0.08,
+    "macro_bias": "bullish",
+    "category": "crypto",
+    "enabled": true
+  },
+  "XRP": {
+    "ticker": "XRP-USD",
+    "support": 1.50,
+    "target": 5.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Dogecoin": {
+    "ticker": "DOGE-USD",
+    "support": 0.15,
+    "target": 0.50,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Cardano": {
+    "ticker": "ADA-USD",
+    "support": 0.50,
+    "target": 2.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Avalanche": {
+    "ticker": "AVAX-USD",
+    "support": 20.00,
+    "target": 80.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Chainlink": {
+    "ticker": "LINK-USD",
+    "support": 12.00,
+    "target": 40.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Polkadot": {
+    "ticker": "DOT-USD",
+    "support": 5.00,
+    "target": 15.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Litecoin": {
+    "ticker": "LTC-USD",
+    "support": 70.00,
+    "target": 150.00,
+    "stop_pct": 0.08,
+    "macro_bias": "neutral",
+    "category": "crypto",
+    "enabled": true
+  },
+  "Palladium": {
+    "ticker": "PA=F",
+    "support": 900.00,
+    "target": 1200.00,
+    "stop_pct": 0.03,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Corn": {
+    "ticker": "ZC=F",
+    "support": 400.00,
+    "target": 550.00,
+    "stop_pct": 0.03,
+    "macro_bias": "neutral",
+    "category": "commodity",
+    "enabled": true
+  },
+  "Dow Jones": {
+    "ticker": "^DJI",
+    "support": 38000.00,
+    "target": 45000.00,
+    "stop_pct": 0.03,
+    "macro_bias": "neutral",
+    "category": "index",
+    "enabled": true
+  },
+  "Russell 2000": {
+    "ticker": "^RUT",
+    "support": 1900.00,
+    "target": 2400.00,
+    "stop_pct": 0.03,
+    "macro_bias": "neutral",
+    "category": "index",
+    "enabled": true
+  },
+  "GBP/USD": {
+    "ticker": "GBPUSD=X",
+    "support": 1.22,
+    "target": 1.35,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  },
+  "USD/JPY": {
+    "ticker": "JPY=X",
+    "support": 140.00,
+    "target": 160.00,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  },
+  "AUD/USD": {
+    "ticker": "AUDUSD=X",
+    "support": 0.62,
+    "target": 0.72,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  },
+  "USD/CHF": {
+    "ticker": "CHF=X",
+    "support": 0.85,
+    "target": 0.95,
+    "stop_pct": 0.02,
+    "macro_bias": "neutral",
+    "category": "forex",
+    "enabled": true
+  }
+}

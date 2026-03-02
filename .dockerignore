@@ -1,0 +1,51 @@
+# =============================================================================
+# Project Aegis — Docker Ignore
+# =============================================================================
+
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+.eggs
+dist
+build
+*.egg
+
+# Virtual environments
+venv
+.venv
+env
+.env
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project files not needed in container
+docs/
+*.md
+!requirements.txt
+kanban_board.json
+CHECKPOINT.md
+CLAUDE.md
+
+# Claude Code
+.claude/
+
+# Logs
+*.log
+agent_logs.txt
+token_usage.json

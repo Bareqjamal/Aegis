@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing — Aegis Terminal</title>
+    <meta name="description" content="Aegis Terminal pricing: Free forever, Pro at $29/mo, Enterprise at $199/seat. AI trading signals at a fraction of competitor prices.">
+    <meta property="og:title" content="Pricing — Aegis Terminal">
+    <meta property="og:description" content="AI trading signals from $0/mo. Free forever tier. Pro at $29/mo. 92x cheaper than Bloomberg.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-preview.png">
+    <meta property="og:url" content="https://aegisterminal.com/pricing">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pricing — Aegis Terminal">
+    <meta name="twitter:description" content="AI trading signals from $0/mo. Free forever tier. Pro at $29/mo. 92x cheaper than Bloomberg.">
+    <meta name="twitter:image" content="/assets/og-preview.png">
+    <link rel="canonical" href="https://aegisterminal.com/pricing">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d1117'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%233fb950' font-family='monospace' font-weight='bold' font-size='20'>A</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    terminal: { bg: '#0d1117', card: '#161b22', border: '#30363d', muted: '#484f58', text: '#e6edf3' },
+                    accent: { green: '#3fb950', blue: '#58a6ff', red: '#f85149', yellow: '#d29922', purple: '#bc8cff' },
+                },
+                fontFamily: { mono: ['JetBrains Mono', 'monospace'], sans: ['Inter', 'sans-serif'] },
+            }
+        }
+    }
+    </script>
+    <style>
+        body { background: #0d1117; color: #e6edf3; }
+        .glow-green { box-shadow: 0 0 40px rgba(63,185,80,0.1), 0 0 0 1px rgba(63,185,80,0.3); }
+        .toggle-active { background: #3fb950; }
+        .toggle-inactive { background: #30363d; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="sticky top-0 z-50 bg-terminal-bg/95 backdrop-blur-md border-b border-terminal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-accent-green/20 flex items-center justify-center">
+                <span class="text-accent-green font-mono font-bold text-sm">A</span>
+            </div>
+            <span class="font-mono font-bold text-lg tracking-tight">AEGIS<span class="text-accent-green">TERMINAL</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm">
+            <a href="index.html#features" class="text-terminal-muted hover:text-terminal-text transition">Features</a>
+            <a href="index.html#how-it-works" class="text-terminal-muted hover:text-terminal-text transition">How It Works</a>
+            <a href="index.html#compare" class="text-terminal-muted hover:text-terminal-text transition">Compare</a>
+            <a href="pricing.html" class="text-terminal-text font-medium">Pricing</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="/app" class="hidden sm:inline text-sm text-terminal-muted hover:text-terminal-text transition">Log In</a>
+            <a href="/app" class="bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-semibold text-sm px-5 py-2 rounded-lg transition">Start Free</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<section class="pt-20 pb-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Simple, Transparent Pricing</h1>
+        <p class="text-terminal-muted text-lg max-w-xl mx-auto mb-10">Start free. Upgrade when you're ready. No hidden fees. Cancel anytime.</p>
+
+        <!-- Annual/Monthly Toggle -->
+        <div class="flex items-center justify-center gap-3 mb-4">
+            <span id="label-monthly" class="text-sm text-terminal-muted">Monthly</span>
+            <button id="billing-toggle" onclick="toggleBilling()" class="relative w-12 h-6 rounded-full toggle-inactive transition-colors" aria-label="Toggle annual billing">
+                <span id="toggle-dot" class="absolute top-1 left-1 w-4 h-4 rounded-full bg-terminal-text transition-transform"></span>
+            </button>
+            <span id="label-annual" class="text-sm text-terminal-muted">Annual</span>
+            <span class="text-accent-green text-xs font-mono font-bold bg-accent-green/10 px-2 py-0.5 rounded">SAVE 25%</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ PRICING CARDS ═══════════════════ -->
+<section class="pb-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6 items-start">
+
+            <!-- ── RECRUIT (Free) ── -->
+            <div class="bg-terminal-card border border-terminal-border rounded-xl p-8">
+                <div class="font-mono text-xs font-bold text-terminal-muted tracking-widest mb-2">RECRUIT</div>
+                <div class="flex items-baseline gap-1 mb-1">
+                    <span class="text-4xl font-extrabold">$0</span>
+                    <span class="text-terminal-muted text-sm">/forever</span>
+                </div>
+                <p class="text-terminal-muted text-sm mb-8">Full AI intelligence. No credit card. No expiry.</p>
+                <a href="/app" class="block w-full text-center border border-terminal-border hover:border-accent-green text-terminal-text font-semibold py-3 rounded-lg transition mb-8">
+                    Start Free
+                </a>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> AI signals for 12+ assets</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Confidence scoring (0-100%)</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Prediction report card</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Paper trading bot (13 gates)</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Social sentiment tracking</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> News intelligence</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Economic calendar</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Geopolitical radar</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Risk dashboard</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Auto-trendlines on charts</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Trade journal + notes</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Morning brief</li>
+                </ul>
+            </div>
+
+            <!-- ── OPERATOR (Pro) ── -->
+            <div class="bg-terminal-card border-2 border-accent-green rounded-xl p-8 relative glow-green">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-green text-terminal-bg text-xs font-bold font-mono px-4 py-1 rounded-full">RECOMMENDED</div>
+                <div class="font-mono text-xs font-bold text-accent-green tracking-widest mb-2">OPERATOR</div>
+                <div class="flex items-baseline gap-1 mb-1">
+                    <span class="text-4xl font-extrabold" id="pro-price">$29</span>
+                    <span class="text-terminal-muted text-sm" id="pro-period">/month</span>
+                </div>
+                <p class="text-terminal-muted text-sm mb-8">Advanced optimization + strategy tools for serious traders.</p>
+                <a href="/app" class="block w-full text-center bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-bold py-3 rounded-lg transition mb-8">
+                    Start 14-Day Free Trial
+                </a>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> <strong>Everything in Recruit, plus:</strong></li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Portfolio optimizer (4 strategies)</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Strategy lab + backtesting</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Efficient frontier charts</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Advanced risk analytics</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Export HTML reports</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Priority signal updates</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Email morning brief</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-green mt-0.5">&#10003;</span> Telegram notifications</li>
+                    <li class="flex items-start gap-2"><span class="text-terminal-muted mt-0.5 text-xs">soon</span> Webhook integrations</li>
+                    <li class="flex items-start gap-2"><span class="text-terminal-muted mt-0.5 text-xs">soon</span> Broker integration (Alpaca)</li>
+                </ul>
+            </div>
+
+            <!-- ── COMMAND (Enterprise) ── -->
+            <div class="bg-terminal-card border border-terminal-border rounded-xl p-8">
+                <div class="font-mono text-xs font-bold text-accent-purple tracking-widest mb-2">COMMAND</div>
+                <div class="flex items-baseline gap-1 mb-1">
+                    <span class="text-4xl font-extrabold" id="ent-price">$199</span>
+                    <span class="text-terminal-muted text-sm" id="ent-period">/seat/month</span>
+                </div>
+                <p class="text-terminal-muted text-sm mb-8">For prop desks and teams. Bloomberg power at 13x less cost.</p>
+                <a href="mailto:sales@aegisterminal.com" class="block w-full text-center border border-accent-purple/50 hover:border-accent-purple text-accent-purple font-semibold py-3 rounded-lg transition mb-8">
+                    Contact Sales
+                </a>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> <strong>Everything in Operator, plus:</strong></li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> Team workspace (5+ seats)</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> Custom asset universe</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> API access (REST + WebSocket)</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> White-label reports</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> Dedicated support</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> Custom integrations</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> SLA guarantee</li>
+                    <li class="flex items-start gap-2"><span class="text-accent-purple mt-0.5">&#10003;</span> On-premise option</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Price comparison callout -->
+        <div class="mt-12 bg-terminal-card border border-terminal-border rounded-xl p-6 sm:p-8 text-center">
+            <p class="text-terminal-muted text-sm mb-4">How we compare on price:</p>
+            <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 font-mono text-sm">
+                <div>
+                    <div class="text-accent-green font-bold text-lg">Aegis Pro</div>
+                    <div class="text-accent-green">$29/mo</div>
+                </div>
+                <div class="text-terminal-muted">vs</div>
+                <div>
+                    <div class="text-terminal-text">TrendSpider</div>
+                    <div class="text-terminal-muted">$89/mo <span class="text-accent-green text-xs">(3x more)</span></div>
+                </div>
+                <div class="text-terminal-muted">vs</div>
+                <div>
+                    <div class="text-terminal-text">Trade Ideas AI</div>
+                    <div class="text-terminal-muted">$178/mo <span class="text-accent-green text-xs">(6x more)</span></div>
+                </div>
+                <div class="text-terminal-muted">vs</div>
+                <div>
+                    <div class="text-terminal-text">Bloomberg</div>
+                    <div class="text-terminal-muted">$2,665/mo <span class="text-accent-green text-xs">(92x more)</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section class="py-20 border-t border-terminal-border">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group" open>
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    Is the free tier actually free forever?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Yes. The Recruit tier is permanently free with no credit card required. You get full AI signals, paper trading, social sentiment, and all core features. We believe in earning your upgrade, not forcing it.</div>
+            </details>
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group">
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    What's the difference between free and Pro?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Pro (Operator) adds portfolio optimization with 4 strategies (Max Sharpe, Min Variance, etc.), the Strategy Lab for backtesting custom strategies, efficient frontier charts, email morning briefs, Telegram notifications, and export reports. The core AI signals and paper trading are free.</div>
+            </details>
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group">
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    Can I try Pro before paying?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Yes! Every new account gets a 14-day Pro trial. No credit card required. If you don't upgrade, you seamlessly downgrade to the free tier with no data loss.</div>
+            </details>
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group">
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    Is this a broker? Can I trade real money?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Aegis Terminal is an advisory and educational platform, not a broker. Currently, it supports paper trading (simulated). Broker integration (starting with Alpaca for US stocks and crypto) is on the roadmap for Q2 2026.</div>
+            </details>
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group">
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    What assets does Aegis cover?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Currently 12+ assets: Gold, BTC, ETH, Silver, Oil, Natural Gas, S&P 500, NASDAQ, Copper, Platinum, Wheat, and EUR/USD. Users can add/remove assets via the Watchlist Manager. US stock coverage is on the roadmap.</div>
+            </details>
+            <details class="bg-terminal-card border border-terminal-border rounded-lg group">
+                <summary class="flex items-center justify-between cursor-pointer px-6 py-4 text-sm font-semibold">
+                    How accurate are the AI signals?
+                    <span class="text-terminal-muted group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="px-6 pb-4 text-sm text-terminal-muted">Check the Prediction Report Card inside the app. Every signal is recorded and validated against real market outcomes within 48 hours. The accuracy data is transparent and updated continuously. Past performance does not guarantee future results.</div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ BOTTOM CTA ═══════════════════ -->
+<section class="py-20 border-t border-terminal-border bg-terminal-card/30">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-extrabold mb-6">Start Trading Smarter Today</h2>
+        <p class="text-terminal-muted mb-8">No credit card. No commitment. Just AI-powered intelligence.</p>
+        <a href="/app" class="bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-bold text-lg px-10 py-4 rounded-lg transition inline-flex items-center gap-2">
+            Create Free Account
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-terminal-border py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-terminal-muted text-xs">Aegis Terminal is an advisory and educational platform. Not a broker. Not financial advice.</p>
+        <p class="text-terminal-muted text-xs font-mono">&copy; 2026 Aegis Terminal</p>
+    </div>
+</footer>
+
+<script>
+let isAnnual = false;
+function toggleBilling() {
+    isAnnual = !isAnnual;
+    const btn = document.getElementById('billing-toggle');
+    const dot = document.getElementById('toggle-dot');
+    const lm = document.getElementById('label-monthly');
+    const la = document.getElementById('label-annual');
+    const pp = document.getElementById('pro-price');
+    const ppr = document.getElementById('pro-period');
+    const ep = document.getElementById('ent-price');
+    const epr = document.getElementById('ent-period');
+
+    if (isAnnual) {
+        btn.classList.remove('toggle-inactive');
+        btn.classList.add('toggle-active');
+        dot.style.transform = 'translateX(24px)';
+        lm.classList.remove('text-terminal-text');
+        lm.classList.add('text-terminal-muted');
+        la.classList.remove('text-terminal-muted');
+        la.classList.add('text-terminal-text');
+        pp.textContent = '$22';
+        ppr.textContent = '/mo (billed $264/yr)';
+        ep.textContent = '$149';
+        epr.textContent = '/seat/mo (billed yearly)';
+    } else {
+        btn.classList.remove('toggle-active');
+        btn.classList.add('toggle-inactive');
+        dot.style.transform = 'translateX(0)';
+        la.classList.remove('text-terminal-text');
+        la.classList.add('text-terminal-muted');
+        lm.classList.remove('text-terminal-muted');
+        lm.classList.add('text-terminal-text');
+        pp.textContent = '$29';
+        ppr.textContent = '/month';
+        ep.textContent = '$199';
+        epr.textContent = '/seat/month';
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Terminal — The Trading AI That Shows Its Homework</title>
+    <meta name="description" content="The world's first transparent AI trading system. Every signal recorded. Every prediction graded. See our real accuracy before you sign up.">
+    <meta name="keywords" content="AI trading, transparent AI, prediction tracking, trading signals, signal accuracy, trading accountability">
+    <meta property="og:title" content="Aegis Terminal — Every Signal Recorded. Every Prediction Graded.">
+    <meta property="og:description" content="The world's first transparent AI trading system. We publish our accuracy. See the wins AND the losses. Free forever.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-preview.png">
+    <meta property="og:url" content="https://aegisterminal.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aegis Terminal — The Trading AI That Shows Its Homework">
+    <meta name="twitter:description" content="The world's first transparent AI trading system. Every signal recorded. Every prediction graded. Free forever.">
+    <meta name="twitter:image" content="/assets/og-preview.png">
+    <link rel="canonical" href="https://aegisterminal.com">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d1117'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%233fb950' font-family='monospace' font-weight='bold' font-size='20'>A</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    terminal: { bg: '#0d1117', card: '#161b22', border: '#30363d', muted: '#484f58', text: '#e6edf3' },
+                    accent: { green: '#3fb950', blue: '#58a6ff', red: '#f85149', yellow: '#d29922', purple: '#bc8cff' },
+                },
+                fontFamily: { mono: ['JetBrains Mono', 'monospace'], sans: ['Inter', 'sans-serif'] },
+            }
+        }
+    }
+    </script>
+    <style>
+        body { background: #0d1117; color: #e6edf3; }
+        .glow-green { text-shadow: 0 0 20px rgba(63,185,80,0.3); }
+        .glow-border { box-shadow: 0 0 30px rgba(63,185,80,0.08); }
+        .hero-grid { background-image: radial-gradient(rgba(63,185,80,0.06) 1px, transparent 1px); background-size: 30px 30px; }
+        .ticker-tape {
+            animation: ticker 30s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .feature-card:hover { border-color: #3fb950; transform: translateY(-2px); }
+        .cta-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(63,185,80,0.4); }
+            50% { box-shadow: 0 0 0 12px rgba(63,185,80,0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- ═══════════════════ TICKER TAPE (TradingView Live Widget) ═══════════════════ -->
+<div class="bg-terminal-card border-b border-terminal-border overflow-hidden" style="height:46px;">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+                {"proName": "FOREXCOM:XAUUSD", "title": "Gold"},
+                {"proName": "BITSTAMP:BTCUSD", "title": "BTC"},
+                {"proName": "BITSTAMP:ETHUSD", "title": "ETH"},
+                {"proName": "FOREXCOM:XAGUSD", "title": "Silver"},
+                {"proName": "TVC:USOIL", "title": "Oil"},
+                {"proName": "PEPPERSTONE:NATGAS", "title": "Nat Gas"},
+                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                {"proName": "FOREXCOM:NSXUSD", "title": "NASDAQ"},
+                {"proName": "FX:EURUSD", "title": "EUR/USD"}
+            ],
+            "showSymbolLogo": false,
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "colorTheme": "dark",
+            "locale": "en"
+        }
+        </script>
+    </div>
+</div>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="sticky top-0 z-50 bg-terminal-bg/95 backdrop-blur-md border-b border-terminal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-accent-green/20 flex items-center justify-center">
+                <span class="text-accent-green font-mono font-bold text-sm">A</span>
+            </div>
+            <span class="font-mono font-bold text-lg tracking-tight">AEGIS<span class="text-accent-green">TERMINAL</span></span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm">
+            <a href="#showcase" class="text-terminal-muted hover:text-terminal-text transition">Product</a>
+            <a href="#features" class="text-terminal-muted hover:text-terminal-text transition">Features</a>
+            <a href="#how-it-works" class="text-terminal-muted hover:text-terminal-text transition">How It Works</a>
+            <a href="#compare" class="text-terminal-muted hover:text-terminal-text transition">Compare</a>
+            <a href="pricing.html" class="text-terminal-muted hover:text-terminal-text transition">Pricing</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="/app" class="hidden sm:inline text-sm text-terminal-muted hover:text-terminal-text transition">Log In</a>
+            <a href="/app" class="bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-semibold text-sm px-5 py-2 rounded-lg transition">Start Free</a>
+            <!-- Mobile hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-terminal-muted hover:text-terminal-text" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile menu dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-terminal-border bg-terminal-bg/98 backdrop-blur-md">
+        <div class="px-4 py-4 space-y-3">
+            <a href="#showcase" class="block text-sm text-terminal-muted hover:text-terminal-text transition" onclick="closeMobileMenu()">Product</a>
+            <a href="#features" class="block text-sm text-terminal-muted hover:text-terminal-text transition" onclick="closeMobileMenu()">Features</a>
+            <a href="#how-it-works" class="block text-sm text-terminal-muted hover:text-terminal-text transition" onclick="closeMobileMenu()">How It Works</a>
+            <a href="#compare" class="block text-sm text-terminal-muted hover:text-terminal-text transition" onclick="closeMobileMenu()">Compare</a>
+            <a href="pricing.html" class="block text-sm text-terminal-muted hover:text-terminal-text transition">Pricing</a>
+            <hr class="border-terminal-border">
+            <a href="/app" class="block text-sm text-accent-green font-semibold">Log In / Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero-grid relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-accent-green/10 border border-accent-green/20 rounded-full px-4 py-1.5 mb-8">
+                <span class="w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
+                <span class="text-accent-green text-xs font-mono font-medium tracking-wide">THE WORLD'S FIRST TRANSPARENT AI TRADING SYSTEM</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                Every Signal Recorded.<br>
+                <span class="text-accent-green glow-green">Every Prediction Graded.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-terminal-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+                The trading AI that shows its homework. We publish every prediction, track every outcome, and grade ourselves publicly. See our real accuracy before you sign up.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a href="/app" class="cta-pulse bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-bold text-base px-8 py-3.5 rounded-lg transition inline-flex items-center gap-2">
+                    See Our Track Record
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+                <a href="#proof" class="border border-terminal-border hover:border-terminal-muted text-terminal-text font-medium text-base px-8 py-3.5 rounded-lg transition">
+                    View Live Scoreboard
+                </a>
+            </div>
+            <!-- Social proof stats — prediction-focused -->
+            <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 text-center">
+                <div>
+                    <div class="text-2xl font-bold font-mono text-accent-green" id="stat-predictions">Live</div>
+                    <div class="text-xs text-terminal-muted mt-1">Prediction Tracking</div>
+                </div>
+                <div class="w-px h-8 bg-terminal-border hidden sm:block"></div>
+                <div>
+                    <div class="text-2xl font-bold font-mono text-accent-blue">Self-Grading</div>
+                    <div class="text-xs text-terminal-muted mt-1">AI Accuracy Engine</div>
+                </div>
+                <div class="w-px h-8 bg-terminal-border hidden sm:block"></div>
+                <div>
+                    <div class="text-2xl font-bold font-mono text-accent-yellow">52</div>
+                    <div class="text-xs text-terminal-muted mt-1">Assets Covered</div>
+                </div>
+                <div class="w-px h-8 bg-terminal-border hidden sm:block"></div>
+                <div>
+                    <div class="text-2xl font-bold font-mono text-terminal-text">$0</div>
+                    <div class="text-xs text-terminal-muted mt-1">Forever Free</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Decorative gradient -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-terminal-bg to-transparent"></div>
+</section>
+
+<!-- ═══════════════════ LIVE PROOF SCOREBOARD ═══════════════════ -->
+<section id="proof" class="py-16 border-t border-terminal-border bg-terminal-card/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <div class="font-mono text-xs text-accent-green tracking-widest mb-3">PREDICTION TRACKING SYSTEM</div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">We Show Our Homework</h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">No other trading platform publishes its prediction accuracy. We do. Here are our most recent calls &mdash; the wins AND the losses.</p>
+        </div>
+
+        <!-- How It Works -->
+        <div class="bg-terminal-bg border border-terminal-border rounded-xl overflow-hidden mb-8 p-8">
+            <div class="grid sm:grid-cols-3 gap-6 text-center">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-accent-green/10 flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">1</span>
+                    </div>
+                    <div class="font-bold text-terminal-text mb-2">AI Generates Signal</div>
+                    <p class="text-terminal-muted text-sm">Our engine analyzes technicals, news sentiment, and macro conditions to produce BUY/SELL signals with confidence scores.</p>
+                </div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-accent-blue/10 flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">2</span>
+                    </div>
+                    <div class="font-bold text-terminal-text mb-2">Market Validates</div>
+                    <p class="text-terminal-muted text-sm">48 hours later, the system checks what actually happened. Was the prediction correct? By how much? Every call is tracked.</p>
+                </div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-accent-yellow/10 flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">3</span>
+                    </div>
+                    <div class="font-bold text-terminal-text mb-2">System Learns</div>
+                    <p class="text-terminal-muted text-sm">Wrong predictions trigger weight adjustments. The system remembers its mistakes and adapts its confidence for future calls.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coming Soon Notice -->
+        <div class="bg-terminal-bg border border-accent-green/30 rounded-xl p-6 mb-8">
+            <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-accent-green/10 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <div>
+                    <div class="font-bold text-accent-green mb-2">Live Scoreboard Coming Soon</div>
+                    <p class="text-terminal-muted text-sm leading-relaxed">Our prediction tracking engine is live inside the app &mdash; every signal is validated against real market outcomes. The public scoreboard with live accuracy stats will launch once we have 30+ days of verified prediction data. Sign up now to watch the system learn in real time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="/app" class="text-accent-green hover:text-accent-green/80 font-mono text-sm font-medium transition">Start tracking predictions for free &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ PRODUCT SHOWCASE ═══════════════════ -->
+<section id="showcase" class="py-20 border-t border-terminal-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">See the Terminal <span class="text-accent-green">In Action</span></h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">A Bloomberg-grade command center built for retail traders. Every screen designed for speed and clarity.</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8" id="showcase-tabs">
+            <button onclick="showTab('advisor')" class="showcase-tab active font-mono text-xs px-4 py-2 rounded-lg border border-terminal-border bg-terminal-card text-accent-green transition hover:border-accent-green/50" data-tab="advisor">Daily Advisor</button>
+            <button onclick="showTab('charts')" class="showcase-tab font-mono text-xs px-4 py-2 rounded-lg border border-terminal-border bg-terminal-card text-terminal-muted transition hover:border-accent-green/50" data-tab="charts">Smart Charts</button>
+            <button onclick="showTab('trading')" class="showcase-tab font-mono text-xs px-4 py-2 rounded-lg border border-terminal-border bg-terminal-card text-terminal-muted transition hover:border-accent-green/50" data-tab="trading">Paper Trading</button>
+            <button onclick="showTab('news')" class="showcase-tab font-mono text-xs px-4 py-2 rounded-lg border border-terminal-border bg-terminal-card text-terminal-muted transition hover:border-accent-green/50" data-tab="news">News Intelligence</button>
+            <button onclick="showTab('calendar')" class="showcase-tab font-mono text-xs px-4 py-2 rounded-lg border border-terminal-border bg-terminal-card text-terminal-muted transition hover:border-accent-green/50" data-tab="calendar">Economic Calendar</button>
+        </div>
+
+        <!-- Terminal Window Frame -->
+        <div class="bg-terminal-card border border-terminal-border rounded-xl overflow-hidden shadow-2xl shadow-black/30">
+            <!-- Title Bar -->
+            <div class="flex items-center gap-2 px-4 py-2.5 bg-terminal-bg border-b border-terminal-border">
+                <div class="flex gap-1.5">
+                    <div class="w-3 h-3 rounded-full bg-accent-red/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-accent-yellow/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-accent-green/80"></div>
+                </div>
+                <span class="font-mono text-xs text-terminal-muted ml-2">Aegis Terminal v6.0</span>
+                <span class="font-mono text-xs text-accent-green ml-auto">LIVE</span>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-5 sm:p-8 min-h-[420px]" id="showcase-content">
+
+                <!-- ADVISOR TAB -->
+                <div id="tab-advisor" class="showcase-panel">
+                    <div class="grid lg:grid-cols-3 gap-4">
+                        <!-- Status Bar -->
+                        <div class="lg:col-span-3 flex flex-wrap gap-3 mb-2">
+                            <span class="font-mono text-xs bg-accent-green/10 text-accent-green px-3 py-1 rounded border border-accent-green/20">MARKET REGIME: RISK-ON</span>
+                            <span class="font-mono text-xs bg-accent-red/10 text-accent-red px-3 py-1 rounded border border-accent-red/20">GEO RISK: EXTREME</span>
+                            <span class="font-mono text-xs bg-accent-blue/10 text-accent-blue px-3 py-1 rounded border border-accent-blue/20">16 SOCIAL ALERTS</span>
+                        </div>
+                        <!-- Signal Card 1 -->
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-accent-green"></span>
+                                    <span class="font-bold">Gold</span>
+                                </div>
+                                <span class="bg-accent-green/20 text-accent-green font-mono text-xs px-2 py-0.5 rounded font-bold">BUY</span>
+                            </div>
+                            <div class="text-2xl font-bold font-mono mb-2">$5,213.70 <span class="text-accent-green text-sm">+0.21%</span></div>
+                            <div class="bg-accent-green/5 border border-accent-green/10 rounded p-2 mb-3">
+                                <div class="font-mono text-xs text-accent-green font-bold">BUY NOW</div>
+                                <div class="text-terminal-muted text-xs mt-1">Technical signals bullish (score: 55). Geopolitical events supportive (+1.7).</div>
+                            </div>
+                            <div class="flex gap-4 font-mono text-xs text-terminal-muted">
+                                <span>Conf: <span class="text-accent-green">73%</span></span>
+                                <span>RSI: 65</span>
+                                <span>R:R <span class="text-terminal-text">0.2</span></span>
+                            </div>
+                            <div class="mt-2 font-mono text-xs bg-accent-yellow/10 text-accent-yellow px-2 py-1 rounded inline-block">4H: 2/4 MIXED</div>
+                        </div>
+                        <!-- Signal Card 2 -->
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-accent-green"></span>
+                                    <span class="font-bold">BTC</span>
+                                </div>
+                                <span class="bg-accent-green/20 text-accent-green font-mono text-xs px-2 py-0.5 rounded font-bold">BUY</span>
+                            </div>
+                            <div class="text-2xl font-bold font-mono mb-2">$67,607 <span class="text-accent-green text-sm">+1.4%</span></div>
+                            <div class="bg-accent-green/5 border border-accent-green/10 rounded p-2 mb-3">
+                                <div class="font-mono text-xs text-accent-green font-bold">CONSIDER BUYING</div>
+                                <div class="text-terminal-muted text-xs mt-1">Bullish macro environment. Social sentiment diverging.</div>
+                            </div>
+                            <div class="flex gap-4 font-mono text-xs text-terminal-muted">
+                                <span>Conf: <span class="text-accent-yellow">44%</span></span>
+                                <span>RSI: 58</span>
+                                <span>R:R <span class="text-terminal-text">2.1</span></span>
+                            </div>
+                            <div class="mt-2 font-mono text-xs bg-accent-green/10 text-accent-green px-2 py-1 rounded inline-block">4H: 3/4 BULLISH</div>
+                        </div>
+                        <!-- Signal Card 3 -->
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-accent-green"></span>
+                                    <span class="font-bold">Copper</span>
+                                </div>
+                                <span class="bg-accent-green/20 text-accent-green font-mono text-xs px-2 py-0.5 rounded font-bold">STRONG BUY</span>
+                            </div>
+                            <div class="text-2xl font-bold font-mono mb-2">$6.03 <span class="text-accent-green text-sm">+2.8%</span></div>
+                            <div class="bg-accent-green/5 border border-accent-green/10 rounded p-2 mb-3">
+                                <div class="font-mono text-xs text-accent-green font-bold">STRONG BUY</div>
+                                <div class="text-terminal-muted text-xs mt-1">Golden Cross active. All indicators aligned bullish.</div>
+                            </div>
+                            <div class="flex gap-4 font-mono text-xs text-terminal-muted">
+                                <span>Conf: <span class="text-accent-green">56%</span></span>
+                                <span>RSI: 59</span>
+                                <span>R:R <span class="text-terminal-text">1.8</span></span>
+                            </div>
+                            <div class="mt-2 font-mono text-xs bg-accent-green/10 text-accent-green px-2 py-1 rounded inline-block">4H: 4/4 BULLISH</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHARTS TAB -->
+                <div id="tab-charts" class="showcase-panel hidden">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-bold text-lg">Gold (GC=F)</span>
+                        <span class="font-mono text-xs bg-terminal-bg px-2 py-1 rounded border border-terminal-border">6M</span>
+                        <div class="flex gap-2 ml-auto">
+                            <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-2 py-1 rounded">Patterns</span>
+                            <span class="font-mono text-xs text-accent-blue bg-accent-blue/10 px-2 py-1 rounded">S/R Zones</span>
+                            <span class="font-mono text-xs text-accent-yellow bg-accent-yellow/10 px-2 py-1 rounded">Trendlines</span>
+                        </div>
+                    </div>
+                    <!-- Simulated Chart Area -->
+                    <div class="bg-terminal-bg border border-terminal-border rounded-lg p-4 h-64 relative overflow-hidden">
+                        <svg viewBox="0 0 800 250" class="w-full h-full" preserveAspectRatio="none">
+                            <!-- Grid -->
+                            <line x1="0" y1="62" x2="800" y2="62" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="125" x2="800" y2="125" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="187" x2="800" y2="187" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4,4"/>
+                            <!-- Resistance Line -->
+                            <line x1="0" y1="30" x2="800" y2="30" stroke="#f85149" stroke-width="1.5" stroke-dasharray="6,4"/>
+                            <text x="700" y="25" fill="#f85149" font-size="10" font-family="JetBrains Mono">R $5,586.20</text>
+                            <!-- Support Line -->
+                            <line x1="0" y1="200" x2="800" y2="200" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="6,4"/>
+                            <text x="700" y="215" fill="#3fb950" font-size="10" font-family="JetBrains Mono">S $4,358.00</text>
+                            <!-- Price action (simulated candlestick path) -->
+                            <path d="M50,180 L100,175 L150,170 L200,190 L250,185 L300,160 L350,140 L400,120 L450,100 L500,90 L520,80 L540,85 L560,70 L580,55 L600,60 L620,50 L640,45 L660,55 L680,40 L700,42 L720,38 L740,35 L760,40" fill="none" stroke="#3fb950" stroke-width="2"/>
+                            <path d="M50,180 L100,175 L150,170 L200,190 L250,185 L300,160 L350,140 L400,120 L450,100 L500,90 L520,80 L540,85 L560,70 L580,55 L600,60 L620,50 L640,45 L660,55 L680,40 L700,42 L720,38 L740,35 L760,40" fill="url(#greenGradient)" opacity="0.15"/>
+                            <!-- SMA 20 -->
+                            <path d="M100,182 L200,185 L300,168 L400,135 L500,100 L600,70 L700,50 L760,45" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.6"/>
+                            <!-- Pattern Labels -->
+                            <text x="190" y="205" fill="#d29922" font-size="9" font-family="JetBrains Mono">Morning Star</text>
+                            <text x="530" y="95" fill="#d29922" font-size="9" font-family="JetBrains Mono">Doji</text>
+                            <text x="620" y="65" fill="#d29922" font-size="9" font-family="JetBrains Mono">Bullish Engulfing</text>
+                            <defs>
+                                <linearGradient id="greenGradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#3fb950" stop-opacity="0.3"/>
+                                    <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <!-- Key Levels -->
+                    <div class="grid grid-cols-3 gap-3 mt-4">
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">Nearest Support</div>
+                            <div class="font-mono font-bold text-accent-green">$4,358.00</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">Current Price</div>
+                            <div class="font-mono font-bold text-terminal-text">$5,212.90</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">Nearest Resistance</div>
+                            <div class="font-mono font-bold text-accent-red">$5,586.20</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TRADING TAB -->
+                <div id="tab-trading" class="showcase-panel hidden">
+                    <!-- Guardian Status -->
+                    <div class="bg-terminal-bg border border-accent-red/30 rounded-lg p-4 mb-4 flex flex-wrap items-center gap-6">
+                        <div>
+                            <div class="font-mono text-xs text-terminal-muted">GUARDIAN</div>
+                            <div class="font-bold text-accent-red text-lg">DANGER</div>
+                            <div class="font-mono text-xs text-accent-red">EXTREME geopolitical risk</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-mono text-xs text-terminal-muted">DRAWDOWN</div>
+                            <div class="font-mono text-xl text-accent-green">1.2%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-mono text-xs text-terminal-muted">POSITIONS</div>
+                            <div class="font-mono text-xl">4/5</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-mono text-xs text-terminal-muted">EXPOSURE</div>
+                            <div class="font-mono text-xl">8%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-mono text-xs text-terminal-muted">CIRCUIT BREAKER</div>
+                            <div class="font-mono text-sm font-bold text-accent-green">STANDBY</div>
+                        </div>
+                    </div>
+                    <!-- Position Cards -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm">Gold</span>
+                                <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 rounded">LONG</span>
+                            </div>
+                            <div class="font-mono text-sm text-accent-green">+$0.08 (+0.41%)</div>
+                            <div class="text-xs text-terminal-muted mt-1">SL: 18.8% away &bull; TP: 3.6% away</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm">Natural Gas</span>
+                                <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 rounded">LONG</span>
+                            </div>
+                            <div class="font-mono text-sm text-accent-green">+$0.29 (+1.43%)</div>
+                            <div class="text-xs text-terminal-muted mt-1">SL: 7.1% away &bull; TP: 59.8% away</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm">Silver</span>
+                                <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 rounded">LONG</span>
+                            </div>
+                            <div class="font-mono text-sm text-accent-green">+$0.34 (+1.72%)</div>
+                            <div class="text-xs text-terminal-muted mt-1">SL: 33.3% away &bull; TP: 6.4% away</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded-lg p-3">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm">Wheat</span>
+                                <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 rounded">LONG</span>
+                            </div>
+                            <div class="font-mono text-sm text-accent-green">+$0.10 (+0.48%)</div>
+                            <div class="text-xs text-terminal-muted mt-1">SL: 13% away &bull; TP: 22% away</div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Stats -->
+                    <div class="grid grid-cols-5 gap-3">
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">CASH</div>
+                            <div class="font-mono font-bold">$907.32</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">EQUITY</div>
+                            <div class="font-mono font-bold">$988.13</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">OPEN P&L</div>
+                            <div class="font-mono font-bold text-accent-green">$0.81</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">WIN RATE</div>
+                            <div class="font-mono font-bold">50.0%</div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 text-center">
+                            <div class="text-terminal-muted text-xs">MAX DD</div>
+                            <div class="font-mono font-bold text-accent-green">1.3%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEWS TAB -->
+                <div id="tab-news" class="showcase-panel hidden">
+                    <div class="flex gap-4 mb-4 font-mono text-xs">
+                        <span class="text-accent-green px-3 py-1 bg-accent-green/10 rounded border border-accent-green/20">Bullish: 49 (35%)</span>
+                        <span class="text-terminal-muted px-3 py-1 bg-terminal-bg rounded border border-terminal-border">Neutral: 64</span>
+                        <span class="text-accent-red px-3 py-1 bg-accent-red/10 rounded border border-accent-red/20">Bearish: 24 (17%)</span>
+                        <span class="text-terminal-muted ml-auto">137 articles</span>
+                    </div>
+                    <!-- Sentiment Grid -->
+                    <div class="grid grid-cols-4 gap-2 mb-4">
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3"><span class="font-bold text-sm">BTC</span><br><span class="font-mono text-xs text-terminal-muted">NEUTRAL (+0.12)</span><br><span class="text-xs text-terminal-muted">25 articles</span></div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3"><span class="font-bold text-sm">NASDAQ</span><br><span class="font-mono text-xs text-accent-green">BULLISH (+0.62)</span><br><span class="text-xs text-terminal-muted">8 articles</span></div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3"><span class="font-bold text-sm">Gold</span><br><span class="font-mono text-xs text-terminal-muted">NEUTRAL (-0.08)</span><br><span class="text-xs text-terminal-muted">13 articles</span></div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3"><span class="font-bold text-sm">S&P 500</span><br><span class="font-mono text-xs text-accent-green">BULLISH (+0.20)</span><br><span class="text-xs text-terminal-muted">10 articles</span></div>
+                    </div>
+                    <!-- Sample Headlines -->
+                    <div class="space-y-2">
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-start gap-3">
+                            <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 py-0.5 rounded shrink-0">+1.8</span>
+                            <div>
+                                <div class="text-sm">Crypto Rally Alert: Expert Reveals How High Bitcoin, Ethereum and XRP Prices Could Climb</div>
+                                <div class="text-xs text-terminal-muted mt-1">cryptocurrency bitcoin &bull; Cointelegraph</div>
+                            </div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-start gap-3">
+                            <span class="font-mono text-xs text-accent-red bg-accent-red/10 px-1.5 py-0.5 rounded shrink-0">-1.6</span>
+                            <div>
+                                <div class="text-sm">Crypto Crash: Liquidations Top $2.5 Billion as Bitcoin, Ethereum and XRP Plummet</div>
+                                <div class="text-xs text-terminal-muted mt-1">cryptocurrency bitcoin &bull; Decrypt</div>
+                            </div>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-start gap-3">
+                            <span class="font-mono text-xs text-accent-green bg-accent-green/10 px-1.5 py-0.5 rounded shrink-0">+1.8</span>
+                            <div>
+                                <div class="text-sm">Bitcoin, Ethereum Lead Broad Rally — Analysts See Fresh Momentum Building</div>
+                                <div class="text-xs text-terminal-muted mt-1">cryptocurrency &bull; TradingView</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALENDAR TAB -->
+                <div id="tab-calendar" class="showcase-panel hidden">
+                    <!-- Next Event Highlight -->
+                    <div class="bg-terminal-bg border border-accent-yellow/30 rounded-lg p-5 mb-4 flex items-center gap-6">
+                        <div>
+                            <div class="font-mono text-xs text-terminal-muted">NEXT EVENT</div>
+                            <div class="font-bold text-lg">PCE Price Index</div>
+                            <div class="text-xs text-terminal-muted mt-1">Fri Feb 27, 13:30 UTC &bull; Impact: <span class="text-accent-yellow">&#9733;&#9733;&#9733;</span></div>
+                            <div class="text-xs text-terminal-muted mt-1">The Fed's PREFERRED inflation gauge. More important than CPI for rate decisions.</div>
+                            <div class="text-xs text-accent-blue mt-1">Affects: Gold, S&P 500, BTC, EUR/USD</div>
+                        </div>
+                        <div class="ml-auto text-right shrink-0">
+                            <div class="text-3xl font-bold font-mono text-accent-yellow">17h 1m</div>
+                            <div class="text-xs text-terminal-muted">until event</div>
+                        </div>
+                    </div>
+                    <!-- Event List -->
+                    <div class="space-y-2">
+                        <div class="font-mono text-xs text-accent-red font-bold tracking-wider mb-1">TODAY</div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-accent-yellow"></span>
+                                <span class="font-bold text-sm">PCE Price Index</span>
+                                <span class="text-accent-yellow text-xs">&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <span class="font-mono text-xs text-accent-yellow">17h 1m</span>
+                        </div>
+                        <div class="font-mono text-xs text-accent-blue font-bold tracking-wider mt-3 mb-1">THIS WEEK</div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-accent-red"></span>
+                                <span class="font-bold text-sm">OPEC+ Meeting</span>
+                                <span class="text-accent-yellow text-xs">&#9733;&#9733;</span>
+                            </div>
+                            <span class="font-mono text-xs text-accent-blue">2 days</span>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-accent-yellow"></span>
+                                <span class="font-bold text-sm">ISM Manufacturing PMI</span>
+                                <span class="text-accent-yellow text-xs">&#9733;&#9733;</span>
+                            </div>
+                            <span class="font-mono text-xs text-accent-blue">3 days</span>
+                        </div>
+                        <div class="bg-terminal-bg border border-terminal-border rounded p-3 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-accent-yellow"></span>
+                                <span class="font-bold text-sm">Non-Farm Payrolls (NFP)</span>
+                                <span class="text-accent-yellow text-xs">&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <span class="font-mono text-xs text-accent-blue">5 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ 3 DIFFERENTIATORS (Our Unique 30%) ═══════════════════ -->
+<section class="py-20 border-t border-terminal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="font-mono text-xs text-accent-green tracking-widest mb-3">WHAT MAKES US DIFFERENT</div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Three Things No One Else Does</h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">TradingView has better charts. Bloomberg has faster data. But nobody does these three things.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Card 1 — THE REPORT CARD (hero differentiator) -->
+            <div class="fade-in bg-terminal-card border-2 border-accent-green/30 rounded-xl p-8 glow-border relative">
+                <div class="absolute -top-3 left-6 bg-accent-green text-terminal-bg text-xs font-bold font-mono px-3 py-0.5 rounded-full">CORE PRODUCT</div>
+                <div class="w-12 h-12 rounded-lg bg-accent-green/10 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Prediction Report Card</h3>
+                <p class="text-terminal-muted text-sm leading-relaxed">Every signal we generate is recorded, timestamped, validated against real market outcomes, and graded. We publish our accuracy rate. TradingView doesn't grade their indicators. Bloomberg doesn't grade their analyst calls. No broker grades their own signals.</p>
+                <div class="mt-5 font-mono text-xs text-accent-green bg-accent-green/5 rounded-lg p-3 border border-accent-green/10">
+                    &#10003; Gold: 81% &bull; &#10003; BTC: 58% &bull; &#10007; Oil: 52% &bull; <span class="text-terminal-muted">Published daily</span>
+                </div>
+            </div>
+            <!-- Card 2 — SELF-LEARNING -->
+            <div class="fade-in bg-terminal-card border border-terminal-border rounded-xl p-8 glow-border" style="transition-delay:0.15s">
+                <div class="w-12 h-12 rounded-lg bg-accent-blue/10 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Self-Improving Signals</h3>
+                <p class="text-terminal-muted text-sm leading-relaxed">When a prediction fails, the system diagnoses WHY &mdash; was RSI unreliable? Did MACD diverge? &mdash; and adjusts confidence weights for that specific asset. The signals genuinely change over time based on outcomes.</p>
+                <div class="mt-5 font-mono text-xs text-accent-blue bg-accent-blue/5 rounded-lg p-3 border border-accent-blue/10">
+                    Oil RSI weight: 40% &rarr; 25% <span class="text-terminal-muted">(after 3 wrong calls)</span>
+                </div>
+            </div>
+            <!-- Card 3 — EXPLAINABLE BOT -->
+            <div class="fade-in bg-terminal-card border border-terminal-border rounded-xl p-8 glow-border" style="transition-delay:0.3s">
+                <div class="w-12 h-12 rounded-lg bg-accent-yellow/10 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-accent-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Explainable Trading Bot</h3>
+                <p class="text-terminal-muted text-sm leading-relaxed">13 safety gates, each one transparent. "Gate 5c FAIL: 3 correlated metal positions." "Gate 2: Confidence 61% below threshold 65%." No bot on any platform explains its reasoning this transparently.</p>
+                <div class="mt-5 font-mono text-xs text-accent-yellow bg-accent-yellow/5 rounded-lg p-3 border border-accent-yellow/10">
+                    Gate 7 PASS &bull; Gate 5c FAIL: correlation &bull; <span class="text-accent-red">TRADE BLOCKED</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ FEATURES GRID ═══════════════════ -->
+<section id="features" class="py-20 border-t border-terminal-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Bloomberg-Grade Intelligence.<br><span class="text-accent-green">Retail-Friendly Price.</span></h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">Everything you need to analyze markets, generate signals, and trade with confidence &mdash; in one terminal.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Feature 1 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-green font-mono text-xs font-bold mb-3 tracking-wider">MULTI-ASSET COVERAGE</div>
+                <h4 class="font-bold text-lg mb-2">12+ Assets Tracked</h4>
+                <p class="text-terminal-muted text-sm">Gold, BTC, ETH, Silver, Oil, Natural Gas, S&P 500, NASDAQ, Copper, Platinum, Wheat, EUR/USD. Add custom assets via UI.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-blue font-mono text-xs font-bold mb-3 tracking-wider">MULTI-AGENT AI</div>
+                <h4 class="font-bold text-lg mb-2">9 Specialized Agents</h4>
+                <p class="text-terminal-muted text-sm">Scanner, Analyst, Researcher, NewsResearcher, AutoTrader, MarketLearner, Chief Monitor &mdash; each with a specific role in the intelligence pipeline.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-red font-mono text-xs font-bold mb-3 tracking-wider">RISK GUARDIAN</div>
+                <h4 class="font-bold text-lg mb-2">Real-Time Risk Monitor</h4>
+                <p class="text-terminal-muted text-sm">Live drawdown tracking, circuit breakers, 13-gate diagnostic panel, position risk cards with SL/TP distance. Every gate explains why it passed or blocked.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-purple font-mono text-xs font-bold mb-3 tracking-wider">SOCIAL SENTIMENT</div>
+                <h4 class="font-bold text-lg mb-2">Influencer + Reddit Tracking</h4>
+                <p class="text-terminal-muted text-sm">Tracks Trump, Musk, Saylor, Powell, Yellen, Fink across news. Monitors 8 Reddit subreddits. Sentiment blended directly into signals.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-yellow font-mono text-xs font-bold mb-3 tracking-wider">GEOPOLITICAL RADAR</div>
+                <h4 class="font-bold text-lg mb-2">Macro Regime + Geo Events</h4>
+                <p class="text-terminal-muted text-sm">Detects 8 geopolitical event types. Classifies macro regimes (Risk-On/Off/Inflationary/Volatile). Auto-adjusts bot behavior accordingly.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="feature-card fade-in bg-terminal-card border border-terminal-border rounded-xl p-6 transition-all duration-200">
+                <div class="text-accent-green font-mono text-xs font-bold mb-3 tracking-wider">AUTO-TRENDLINES</div>
+                <h4 class="font-bold text-lg mb-2">Smart Chart Analysis</h4>
+                <p class="text-terminal-muted text-sm">Auto-detected support/resistance zones, trendline fitting with R-squared validation, key levels summary. Institutional-grade analysis, zero cost.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ HOW IT WORKS (The Daily Habit Loop) ═══════════════════ -->
+<section id="how-it-works" class="py-20 border-t border-terminal-border bg-terminal-card/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">The Daily Loop That<br><span class="text-accent-green">Makes You Better</span></h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">Not just signals &mdash; a daily accountability system that tracks your calls alongside the AI's.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6">
+            <!-- Step 1 -->
+            <div class="fade-in text-center">
+                <div class="w-14 h-14 rounded-full bg-accent-green/10 border-2 border-accent-green/30 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-accent-green font-mono font-bold text-xl">1</span>
+                </div>
+                <h4 class="font-bold mb-2">Morning Brief</h4>
+                <p class="text-terminal-muted text-xs leading-relaxed">7 AM: Email/Telegram arrives. "Were you right yesterday?" Your scorecard + today's signals.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="fade-in text-center" style="transition-delay:0.1s">
+                <div class="w-14 h-14 rounded-full bg-accent-blue/10 border-2 border-accent-blue/30 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-accent-blue font-mono font-bold text-xl">2</span>
+                </div>
+                <h4 class="font-bold mb-2">Agree or Disagree</h4>
+                <p class="text-terminal-muted text-xs leading-relaxed">See today's AI signals. Tap Agree or Disagree on each one. You're now a participant, not a spectator.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="fade-in text-center" style="transition-delay:0.2s">
+                <div class="w-14 h-14 rounded-full bg-accent-yellow/10 border-2 border-accent-yellow/30 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-accent-yellow font-mono font-bold text-xl">3</span>
+                </div>
+                <h4 class="font-bold mb-2">See Results</h4>
+                <p class="text-terminal-muted text-xs leading-relaxed">Tomorrow: "You agreed with 4/6 signals. 3 were correct. Your accuracy: 67%. The AI: 58%."</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="fade-in text-center" style="transition-delay:0.3s">
+                <div class="w-14 h-14 rounded-full bg-accent-purple/10 border-2 border-accent-purple/30 flex items-center justify-center mx-auto mb-5">
+                    <span class="text-accent-purple font-mono font-bold text-xl">4</span>
+                </div>
+                <h4 class="font-bold mb-2">Build Your Streak</h4>
+                <p class="text-terminal-muted text-xs leading-relaxed">Your accuracy streak grows daily. Beat the AI. Compete with yourself. The habit loop that makes you check Aegis first.</p>
+            </div>
+        </div>
+        <!-- Visual flow -->
+        <div class="mt-12 bg-terminal-bg border border-terminal-border rounded-xl p-6 font-mono text-xs text-center">
+            <span class="text-accent-green">Morning Email</span>
+            <span class="text-terminal-border mx-2">&rarr;</span>
+            <span class="text-accent-blue">Open Aegis</span>
+            <span class="text-terminal-border mx-2">&rarr;</span>
+            <span class="text-accent-yellow">Agree/Disagree</span>
+            <span class="text-terminal-border mx-2">&rarr;</span>
+            <span class="text-accent-purple">See Score</span>
+            <span class="text-terminal-border mx-2">&rarr;</span>
+            <span class="text-accent-green">Repeat</span>
+            <span class="text-terminal-muted mx-2">&bull;</span>
+            <span class="text-terminal-muted">Streak builds</span>
+            <span class="text-terminal-muted mx-2">&bull;</span>
+            <span class="text-terminal-muted">Can't stop</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ COMPARISON TABLE ═══════════════════ -->
+<section id="compare" class="py-20 border-t border-terminal-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Why Aegis? <span class="text-accent-green">See the Difference.</span></h2>
+            <p class="text-terminal-muted max-w-xl mx-auto">Features that cost $178/mo elsewhere are free on Aegis.</p>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b border-terminal-border">
+                        <th class="text-left py-4 px-4 text-terminal-muted font-mono text-xs tracking-wider">FEATURE</th>
+                        <th class="text-center py-4 px-4">
+                            <div class="text-accent-green font-bold">Aegis Free</div>
+                            <div class="text-terminal-muted text-xs">$0/mo</div>
+                        </th>
+                        <th class="text-center py-4 px-4">
+                            <div class="text-terminal-text font-bold">TradingView</div>
+                            <div class="text-terminal-muted text-xs">$14/mo</div>
+                        </th>
+                        <th class="text-center py-4 px-4">
+                            <div class="text-terminal-text font-bold">Trade Ideas</div>
+                            <div class="text-terminal-muted text-xs">$178/mo</div>
+                        </th>
+                        <th class="text-center py-4 px-4">
+                            <div class="text-terminal-text font-bold">3Commas</div>
+                            <div class="text-terminal-muted text-xs">$20/mo</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="font-mono text-xs">
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">AI Trading Signals</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-green">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Confidence Scoring</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">0-100%</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-terminal-muted">Opaque</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Prediction Tracking</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Autonomous Trading Bot</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">13 Gates</td>
+                        <td class="text-center py-3 px-4 text-terminal-muted">Basic</td>
+                        <td class="text-center py-3 px-4 text-terminal-muted">Basic</td>
+                        <td class="text-center py-3 px-4 text-accent-green">DCA Bots</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Social Sentiment</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Geopolitical Analysis</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="border-b border-terminal-border/50 hover:bg-terminal-card/50">
+                        <td class="py-3 px-4">Self-Learning AI</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold">YES</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                        <td class="text-center py-3 px-4 text-accent-red">NO</td>
+                    </tr>
+                    <tr class="hover:bg-terminal-card/50">
+                        <td class="py-3 px-4 font-bold text-terminal-text">Price</td>
+                        <td class="text-center py-3 px-4 text-accent-green font-bold text-base">$0</td>
+                        <td class="text-center py-3 px-4 text-terminal-text">$14/mo</td>
+                        <td class="text-center py-3 px-4 text-terminal-text">$178/mo</td>
+                        <td class="text-center py-3 px-4 text-terminal-text">$20/mo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center mt-10">
+            <a href="pricing.html" class="text-accent-blue hover:text-accent-blue/80 text-sm font-medium transition">See full pricing details &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ SIGNAL PIPELINE VISUAL ═══════════════════ -->
+<section class="py-20 border-t border-terminal-border bg-terminal-card/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold mb-4">The Intelligence Pipeline</h2>
+            <p class="text-terminal-muted">How every signal is generated, validated, and improved.</p>
+        </div>
+        <div class="bg-terminal-bg border border-terminal-border rounded-xl p-6 sm:p-8 font-mono text-xs sm:text-sm">
+            <div class="space-y-3 text-terminal-muted">
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-green font-bold w-24 text-right">DATA</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">Market prices (yfinance) + RSS News + Reddit + Influencer feeds</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-blue font-bold w-24 text-right">ANALYSIS</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">Technical (SMA/RSI/MACD/BB) + Sentiment + Social + Geo + Macro</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-yellow font-bold w-24 text-right">CONFIDENCE</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">40% Technical + 20% News + 40% Historical Accuracy = 0-100%</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-purple font-bold w-24 text-right">GATES</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">13 safety checks: signal, confidence, geo, regime, drawdown, correlation</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-red font-bold w-24 text-right">EXECUTE</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">Paper trade with auto stop-loss, take-profit, trailing stop</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-accent-green font-bold w-24 text-right">LEARN</span>
+                    <span class="text-terminal-border">&rarr;</span>
+                    <span class="text-terminal-text">MarketLearner validates outcomes &rarr; adapts future confidence</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ CTA SECTION ═══════════════════ -->
+<section class="py-24 border-t border-terminal-border">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6">The Only Trading AI That<br><span class="text-accent-green">Shows Its Homework</span></h2>
+        <p class="text-terminal-muted text-lg mb-10 max-w-xl mx-auto">Every signal recorded. Every prediction graded. Every mistake explained. See our real track record, then decide if you trust us.</p>
+        <a href="/app" class="cta-pulse bg-accent-green hover:bg-accent-green/90 text-terminal-bg font-bold text-lg px-10 py-4 rounded-lg transition inline-flex items-center gap-2">
+            See Our Track Record
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+        <p class="text-terminal-muted text-xs mt-4">Free forever. No credit card. No black boxes.</p>
+    </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-terminal-border py-12 bg-terminal-card/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid sm:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-6 h-6 rounded bg-accent-green/20 flex items-center justify-center">
+                        <span class="text-accent-green font-mono font-bold text-xs">A</span>
+                    </div>
+                    <span class="font-mono font-bold text-sm">AEGIS</span>
+                </div>
+                <p class="text-terminal-muted text-xs leading-relaxed">AI-powered trading intelligence for the modern retail trader.</p>
+            </div>
+            <div>
+                <h5 class="font-mono text-xs font-bold text-terminal-muted tracking-wider mb-4">PRODUCT</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#features" class="text-terminal-muted hover:text-terminal-text transition">Features</a></li>
+                    <li><a href="pricing.html" class="text-terminal-muted hover:text-terminal-text transition">Pricing</a></li>
+                    <li><a href="#" class="text-terminal-muted hover:text-terminal-text transition">Changelog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-mono text-xs font-bold text-terminal-muted tracking-wider mb-4">RESOURCES</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="https://github.com/aegis-terminal" class="text-terminal-muted hover:text-terminal-text transition">GitHub</a></li>
+                    <li><a href="/app" class="text-terminal-muted hover:text-terminal-text transition">Launch Terminal</a></li>
+                    <li><a href="pricing.html" class="text-terminal-muted hover:text-terminal-text transition">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-mono text-xs font-bold text-terminal-muted tracking-wider mb-4">LEGAL</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="text-terminal-muted text-xs">Not a broker. Not financial advice.</span></li>
+                    <li><span class="text-terminal-muted text-xs">AI signals for informational purposes only.</span></li>
+                    <li><span class="text-terminal-muted text-xs">Past performance ≠ future results.</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-terminal-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-terminal-muted text-xs">Aegis Terminal is an advisory and educational platform. Not a broker. Not financial advice. Past AI performance does not guarantee future results.</p>
+            <p class="text-terminal-muted text-xs font-mono">&copy; 2026 Aegis Terminal</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script>
+// Intersection Observer for fade-in animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Showcase tab switching
+function showTab(tabName) {
+    // Hide all panels
+    document.querySelectorAll('.showcase-panel').forEach(p => p.classList.add('hidden'));
+    // Show selected panel
+    document.getElementById('tab-' + tabName).classList.remove('hidden');
+    // Update tab button styles
+    document.querySelectorAll('.showcase-tab').forEach(btn => {
+        if (btn.dataset.tab === tabName) {
+            btn.classList.remove('text-terminal-muted');
+            btn.classList.add('text-accent-green', 'border-accent-green/50', 'active');
+        } else {
+            btn.classList.add('text-terminal-muted');
+            btn.classList.remove('text-accent-green', 'border-accent-green/50', 'active');
+        }
+    });
+}
+
+// Auto-rotate showcase tabs every 6 seconds
+let showcaseInterval;
+const tabOrder = ['advisor', 'charts', 'trading', 'news', 'calendar'];
+let currentTabIdx = 0;
+
+function startAutoRotate() {
+    showcaseInterval = setInterval(() => {
+        currentTabIdx = (currentTabIdx + 1) % tabOrder.length;
+        showTab(tabOrder[currentTabIdx]);
+    }, 6000);
+}
+
+// Pause auto-rotate on hover, resume on leave
+const showcaseSection = document.getElementById('showcase-content');
+if (showcaseSection) {
+    showcaseSection.addEventListener('mouseenter', () => clearInterval(showcaseInterval));
+    showcaseSection.addEventListener('mouseleave', startAutoRotate);
+    // Also pause on manual tab click
+    document.querySelectorAll('.showcase-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+            clearInterval(showcaseInterval);
+            currentTabIdx = tabOrder.indexOf(btn.dataset.tab);
+            setTimeout(startAutoRotate, 10000); // Resume after 10s of inactivity
+        });
+    });
+    startAutoRotate();
+}
+
+// Mobile hamburger menu toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        // Swap hamburger/X icon
+        const svg = mobileMenuBtn.querySelector('svg');
+        if (mobileMenu.classList.contains('hidden')) {
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+        } else {
+            svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+        }
+    });
+}
+function closeMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu) menu.classList.add('hidden');
+    const btn = document.getElementById('mobile-menu-btn');
+    if (btn) {
+        const svg = btn.querySelector('svg');
+        svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+    }
+}
+</script>
+</body>
+</html>

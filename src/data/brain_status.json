@@ -1,0 +1,10 @@
+{
+  "last_cycle": "2026-03-02T09:58:07.111486+00:00",
+  "next_cycle": "2026-03-02T11:28:07.109041+01:00",
+  "status": "running",
+  "last_error": null,
+  "cycles_today": 7,
+  "uptime_seconds": 259212.9,
+  "interval_min": 30,
+  "morning_email_hour": 7
+}

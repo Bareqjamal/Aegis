@@ -1,0 +1,985 @@
+{
+  "lessons": [
+    {
+      "id": "MKTL-001",
+      "timestamp": "2026-02-19T13:45:07.750986+00:00",
+      "prediction_id": "PRED-20260208214828-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2095.84,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.36,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-002",
+      "timestamp": "2026-02-19T13:45:08.509252+00:00",
+      "prediction_id": "PRED-20260208220751-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2096.96,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.41,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-003",
+      "timestamp": "2026-02-19T13:46:13.176518+00:00",
+      "prediction_id": "PRED-20260208214828-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2095.84,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.36,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-004",
+      "timestamp": "2026-02-19T13:46:14.050135+00:00",
+      "prediction_id": "PRED-20260208220751-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2096.96,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.41,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-005",
+      "timestamp": "2026-02-19T13:46:14.651643+00:00",
+      "prediction_id": "PRED-20260208223911-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2098.73,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.49,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-006",
+      "timestamp": "2026-02-19T13:46:15.493936+00:00",
+      "prediction_id": "PRED-20260208231032-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2141.83,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -10.33,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-007",
+      "timestamp": "2026-02-19T13:46:17.135421+00:00",
+      "prediction_id": "PRED-20260209080005-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2068.38,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -7.14,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-008",
+      "timestamp": "2026-02-19T13:46:17.322596+00:00",
+      "prediction_id": "PRED-20260209080030-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 80.51,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -3.15,
+      "what_went_wrong": "Price dropped -3.2% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-009",
+      "timestamp": "2026-02-19T13:46:17.873292+00:00",
+      "prediction_id": "PRED-20260209083125-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2052.11,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.41,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-010",
+      "timestamp": "2026-02-19T13:46:18.075292+00:00",
+      "prediction_id": "PRED-20260209083147-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.76,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -4.64,
+      "what_went_wrong": "Price dropped -4.6% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-011",
+      "timestamp": "2026-02-19T13:46:18.573590+00:00",
+      "prediction_id": "PRED-20260209083516-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2038.68,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.79,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-012",
+      "timestamp": "2026-02-19T13:46:18.798237+00:00",
+      "prediction_id": "PRED-20260209083530-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.57,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -4.41,
+      "what_went_wrong": "Price dropped -4.4% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-013",
+      "timestamp": "2026-02-19T13:46:19.337692+00:00",
+      "prediction_id": "PRED-20260209090255-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2049.84,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.3,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-014",
+      "timestamp": "2026-02-19T13:46:19.524276+00:00",
+      "prediction_id": "PRED-20260209090308-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.56,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -4.4,
+      "what_went_wrong": "Price dropped -4.4% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-015",
+      "timestamp": "2026-02-19T13:46:20.183957+00:00",
+      "prediction_id": "PRED-20260209093421-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2045.32,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.1,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-016",
+      "timestamp": "2026-02-19T13:46:20.327865+00:00",
+      "prediction_id": "PRED-20260209093434-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.54,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -4.38,
+      "what_went_wrong": "Price dropped -4.4% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-017",
+      "timestamp": "2026-02-19T13:46:24.017580+00:00",
+      "prediction_id": "PRED-20260209100540-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2036.01,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.67,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-018",
+      "timestamp": "2026-02-19T13:46:24.164692+00:00",
+      "prediction_id": "PRED-20260209100554-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 80.98,
+      "outcome_price": 77.97000122070312,
+      "pct_move": -3.72,
+      "what_went_wrong": "Price dropped -3.7% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-019",
+      "timestamp": "2026-02-19T13:46:24.684719+00:00",
+      "prediction_id": "PRED-20260209103655-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2021.51,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -4.99,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-020",
+      "timestamp": "2026-02-19T13:46:25.384384+00:00",
+      "prediction_id": "PRED-20260209110842-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2033.11,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.53,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-021",
+      "timestamp": "2026-02-19T13:46:26.006184+00:00",
+      "prediction_id": "PRED-20260209114014-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2023.63,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.09,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-022",
+      "timestamp": "2026-02-19T13:46:26.667333+00:00",
+      "prediction_id": "PRED-20260209121138-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2030.31,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.4,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-023",
+      "timestamp": "2026-02-19T13:46:27.264704+00:00",
+      "prediction_id": "PRED-20260209124303-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2033.3,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.54,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-024",
+      "timestamp": "2026-02-19T13:46:27.894165+00:00",
+      "prediction_id": "PRED-20260209131428-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2035.79,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.66,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-025",
+      "timestamp": "2026-02-19T13:46:28.526880+00:00",
+      "prediction_id": "PRED-20260209134553-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2037.77,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.75,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-026",
+      "timestamp": "2026-02-19T13:46:29.195596+00:00",
+      "prediction_id": "PRED-20260209141741-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2011.83,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -4.53,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-027",
+      "timestamp": "2026-02-19T13:46:29.787893+00:00",
+      "prediction_id": "PRED-20260209144933-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2039.86,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -5.85,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-028",
+      "timestamp": "2026-02-19T13:46:29.979981+00:00",
+      "prediction_id": "PRED-20260209144953-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 80.6,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -3.24,
+      "what_went_wrong": "Price dropped -3.2% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-029",
+      "timestamp": "2026-02-19T13:46:30.478255+00:00",
+      "prediction_id": "PRED-20260209152110-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2048.69,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.25,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-030",
+      "timestamp": "2026-02-19T13:46:30.606700+00:00",
+      "prediction_id": "PRED-20260209152125-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.15,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -3.9,
+      "what_went_wrong": "Price dropped -3.9% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-031",
+      "timestamp": "2026-02-19T13:46:31.147392+00:00",
+      "prediction_id": "PRED-20260209155238-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2056.91,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.63,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-032",
+      "timestamp": "2026-02-19T13:46:31.346964+00:00",
+      "prediction_id": "PRED-20260209155254-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 81.99,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -4.88,
+      "what_went_wrong": "Price dropped -4.9% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-033",
+      "timestamp": "2026-02-19T13:46:31.853158+00:00",
+      "prediction_id": "PRED-20260209162349-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2053.94,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -6.49,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-034",
+      "timestamp": "2026-02-19T13:46:32.065410+00:00",
+      "prediction_id": "PRED-20260209162404-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 82.26,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -5.2,
+      "what_went_wrong": "Price dropped -5.2% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-035",
+      "timestamp": "2026-02-19T13:46:32.444778+00:00",
+      "prediction_id": "PRED-20260209165523-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2090.75,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -8.14,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-036",
+      "timestamp": "2026-02-19T13:46:32.677433+00:00",
+      "prediction_id": "PRED-20260209165538-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 83.18,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -6.25,
+      "what_went_wrong": "Price dropped -6.2% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-037",
+      "timestamp": "2026-02-19T13:46:33.133565+00:00",
+      "prediction_id": "PRED-20260209172650-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2082.29,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -7.76,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-038",
+      "timestamp": "2026-02-19T13:46:33.331925+00:00",
+      "prediction_id": "PRED-20260209172705-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 83.08,
+      "outcome_price": 77.98500061035156,
+      "pct_move": -6.13,
+      "what_went_wrong": "Price dropped -6.1% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-039",
+      "timestamp": "2026-02-19T13:46:42.521877+00:00",
+      "prediction_id": "PRED-20260209175815-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2126.55,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -9.68,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-040",
+      "timestamp": "2026-02-19T13:46:42.757232+00:00",
+      "prediction_id": "PRED-20260209175831-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 82.87,
+      "outcome_price": 78.08499908447266,
+      "pct_move": -5.77,
+      "what_went_wrong": "Price dropped -5.8% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-041",
+      "timestamp": "2026-02-19T13:46:43.261736+00:00",
+      "prediction_id": "PRED-20260209210835-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 2119.72,
+      "outcome_price": 1920.615966796875,
+      "pct_move": -9.39,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,920.62",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "MACD was bearish when buy signal was issued — momentum disagreed"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For ETH: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-042",
+      "timestamp": "2026-02-19T13:46:43.457413+00:00",
+      "prediction_id": "PRED-20260209210902-Silver",
+      "asset": "Silver",
+      "signal_was": "BUY",
+      "entry_price": 83.66,
+      "outcome_price": 78.08499908447266,
+      "pct_move": -6.66,
+      "what_went_wrong": "Price dropped -6.7% in 48h",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Silver: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-043",
+      "timestamp": "2026-02-27T11:40:00.881042+00:00",
+      "prediction_id": "PRED-20260227102838-ETH",
+      "asset": "ETH",
+      "signal_was": "BUY",
+      "entry_price": 5193.6,
+      "outcome_price": 1967.6962890625,
+      "pct_move": -62.11,
+      "what_went_wrong": "Stop-loss $2,090.00 hit. Price at $1,967.70",
+      "probable_causes": [
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+      "rule": "For ETH: Risk/Reward was below 1.5:1 — insufficient margin of safety"
+    },
+    {
+      "id": "MKTL-044",
+      "timestamp": "2026-02-28T14:14:30.448605+00:00",
+      "prediction_id": "PRED-20260228124633-XRP",
+      "asset": "XRP",
+      "signal_was": "STRONG BUY",
+      "entry_price": 1.3,
+      "outcome_price": 1.3304667472839355,
+      "pct_move": 2.34,
+      "what_went_wrong": "Stop-loss $1.38 hit. Price at $1.33",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For XRP: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-045",
+      "timestamp": "2026-02-28T14:14:39.197369+00:00",
+      "prediction_id": "PRED-20260228124637-Chainlink",
+      "asset": "Chainlink",
+      "signal_was": "STRONG BUY",
+      "entry_price": 2.86,
+      "outcome_price": 8.450519561767578,
+      "pct_move": 195.47,
+      "what_went_wrong": "Stop-loss $11.04 hit. Price at $8.45",
+      "probable_causes": [
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+      "rule": "For Chainlink: Risk/Reward was below 1.5:1 — insufficient margin of safety"
+    },
+    {
+      "id": "MKTL-046",
+      "timestamp": "2026-02-28T14:15:14.412305+00:00",
+      "prediction_id": "PRED-20260228124704-USD/CHF",
+      "asset": "USD/CHF",
+      "signal_was": "BUY",
+      "entry_price": 0.71,
+      "outcome_price": 0.7689800262451172,
+      "pct_move": 8.31,
+      "what_went_wrong": "Stop-loss $0.83 hit. Price at $0.77",
+      "probable_causes": [
+        "MACD was bearish when buy signal was issued — momentum disagreed",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "MACD was bearish when buy signal was issued — momentum disagreed",
+      "rule": "For USD/CHF: MACD was bearish when buy signal was issued — momentum disagreed"
+    },
+    {
+      "id": "MKTL-047",
+      "timestamp": "2026-02-28T14:18:44.828355+00:00",
+      "prediction_id": "PRED-20260228131255-UnitedHealth",
+      "asset": "UnitedHealth",
+      "signal_was": "BUY",
+      "entry_price": 293.27,
+      "outcome_price": 293.32501220703125,
+      "pct_move": 0.02,
+      "what_went_wrong": "Stop-loss $427.50 hit. Price at $293.33",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For UnitedHealth: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-048",
+      "timestamp": "2026-02-28T14:20:43.030029+00:00",
+      "prediction_id": "PRED-20260228131354-Avalanche",
+      "asset": "Avalanche",
+      "signal_was": "STRONG BUY",
+      "entry_price": 1.3,
+      "outcome_price": 8.680027961730957,
+      "pct_move": 567.69,
+      "what_went_wrong": "Stop-loss $18.40 hit. Price at $8.68",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Avalanche: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-049",
+      "timestamp": "2026-02-28T14:31:06.942499+00:00",
+      "prediction_id": "PRED-20260228131359-Chainlink",
+      "asset": "Chainlink",
+      "signal_was": "BUY",
+      "entry_price": 8.32,
+      "outcome_price": 8.450793266296387,
+      "pct_move": 1.57,
+      "what_went_wrong": "Stop-loss $11.04 hit. Price at $8.45",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Chainlink: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-050",
+      "timestamp": "2026-02-28T14:31:15.177582+00:00",
+      "prediction_id": "PRED-20260228132441-Solana",
+      "asset": "Solana",
+      "signal_was": "STRONG BUY",
+      "entry_price": 79.07,
+      "outcome_price": 80.52781677246094,
+      "pct_move": 1.84,
+      "what_went_wrong": "Stop-loss $92.00 hit. Price at $80.53",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Solana: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-051",
+      "timestamp": "2026-02-28T14:31:17.163913+00:00",
+      "prediction_id": "PRED-20260228132454-Dogecoin",
+      "asset": "Dogecoin",
+      "signal_was": "STRONG BUY",
+      "entry_price": 0.09,
+      "outcome_price": 0.09094569087028503,
+      "pct_move": 1.05,
+      "what_went_wrong": "Stop-loss $0.14 hit. Price at $0.09",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety",
+        "News sentiment was bearish — market psychology overrode technicals"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Dogecoin: High volatility environment — signals less reliable"
+    },
+    {
+      "id": "MKTL-052",
+      "timestamp": "2026-02-28T14:31:18.213177+00:00",
+      "prediction_id": "PRED-20260228132512-Polkadot",
+      "asset": "Polkadot",
+      "signal_was": "STRONG BUY",
+      "entry_price": 1.3,
+      "outcome_price": 1.5026506185531616,
+      "pct_move": 15.59,
+      "what_went_wrong": "Stop-loss $4.60 hit. Price at $1.50",
+      "probable_causes": [
+        "High volatility environment — signals less reliable",
+        "RSI was low but price continued falling — trend was stronger than mean reversion",
+        "Risk/Reward was below 1.5:1 — insufficient margin of safety"
+      ],
+      "lesson_learned": "High volatility environment — signals less reliable",
+      "rule": "For Polkadot: High volatility environment — signals less reliable"
+    }
+  ],
+  "rules": [
+    "For ETH: High volatility environment — signals less reliable",
+    "For Silver: High volatility environment — signals less reliable",
+    "For ETH: Risk/Reward was below 1.5:1 — insufficient margin of safety",
+    "For XRP: High volatility environment — signals less reliable",
+    "For Chainlink: Risk/Reward was below 1.5:1 — insufficient margin of safety",
+    "For USD/CHF: MACD was bearish when buy signal was issued — momentum disagreed",
+    "For UnitedHealth: High volatility environment — signals less reliable",
+    "For Avalanche: High volatility environment — signals less reliable",
+    "For Chainlink: High volatility environment — signals less reliable",
+    "For Solana: High volatility environment — signals less reliable",
+    "For Dogecoin: High volatility environment — signals less reliable",
+    "For Polkadot: High volatility environment — signals less reliable"
+  ]
+}

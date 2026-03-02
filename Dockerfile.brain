@@ -1,0 +1,41 @@
+# =============================================================================
+# Project Aegis — Brain Service Dockerfile
+# =============================================================================
+# Build:  docker build -f Dockerfile.brain -t aegis-brain .
+# Run:    docker run -p 8502:8502 aegis-brain
+# =============================================================================
+
+FROM python:3.11-slim AS base
+
+# Prevent Python from writing .pyc files and enable unbuffered output
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app
+
+WORKDIR /app
+
+# Install system dependencies (minimal — curl for healthcheck)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies (same as main app + brain extras)
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY src/ ./src/
+COPY memory/ ./memory/
+
+# Create directories that might not exist yet
+RUN mkdir -p src/data/charts src/data/watchlists memory research_outputs users
+
+# Health check — FastAPI exposes /health
+HEALTHCHECK --interval=30s --timeout=10s --start-period=20s --retries=3 \
+    CMD curl -f http://localhost:8502/health || exit 1
+
+EXPOSE 8502
+
+# Run the brain entrypoint (APScheduler + FastAPI)
+CMD ["python", "src/brain_entrypoint.py"]

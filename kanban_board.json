@@ -1,0 +1,438 @@
+{
+  "board": {
+    "Backlog": [
+      {
+        "id": "AEGIS-007",
+        "title": "Sentiment analysis module",
+        "description": "Add Fear & Greed index and news sentiment as supplementary signals.",
+        "priority": "low",
+        "created": "2026-02-08"
+      }
+    ],
+    "To Do": [
+      {
+        "id": "AEGIS-062",
+        "title": "TRADE ALERT: Buy Wheat - Target $700.00",
+        "description": "Signal: BUY (score 35/100) | Entry: $2,420.60 | Target: $700.00 | Stop-Loss: $494.00 | R:R -0.9:1",
+        "priority": "high",
+        "created": "2026-03-02"
+      },
+      {
+        "id": "AEGIS-061",
+        "title": "TRADE ALERT: Buy Cardano - Target $2.00",
+        "description": "Signal: BUY (score 43/100) | Entry: $0.27 | Target: $2.00 | Stop-Loss: $0.23 | R:R 43.2:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-060",
+        "title": "TRADE ALERT: Buy JPMorgan - Target $326.83",
+        "description": "Signal: BUY (score 35/100) | Entry: $300.30 | Target: $326.83 | Stop-Loss: $180.50 | R:R 0.2:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-059",
+        "title": "TRADE ALERT: Buy Berkshire - Target $545.35",
+        "description": "Signal: BUY (score 38/100) | Entry: $504.95 | Target: $545.35 | Stop-Loss: $380.00 | R:R 0.3:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-058",
+        "title": "TRADE ALERT: Buy Tesla - Target $442.51",
+        "description": "Signal: BUY (score 40/100) | Entry: $402.51 | Target: $442.51 | Stop-Loss: $375.84 | R:R 1.5:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-057",
+        "title": "TRADE ALERT: Buy EUR/USD - Target $1.27",
+        "description": "Signal: BUY (score 35/100) | Entry: $1.18 | Target: $1.27 | Stop-Loss: $1.03 | R:R 0.6:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-056",
+        "title": "TRADE ALERT: Buy Apple - Target $285.31",
+        "description": "Signal: BUY (score 43/100) | Entry: $264.18 | Target: $285.31 | Stop-Loss: $142.50 | R:R 0.2:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-055",
+        "title": "TRADE ALERT: Buy NVIDIA - Target $195.96",
+        "description": "Signal: BUY (score 50/100) | Entry: $177.19 | Target: $195.96 | Stop-Loss: $164.68 | R:R 1.5:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-054",
+        "title": "TRADE ALERT: Buy Platinum - Target $2,598.71",
+        "description": "Signal: BUY (score 35/100) | Entry: $2,373.50 | Target: $2,598.71 | Stop-Loss: $2,223.36 | R:R 1.5:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-053",
+        "title": "TRADE ALERT: Buy NASDAQ - Target $24,481.67",
+        "description": "Signal: BUY (score 58/100) | Entry: $22,668.21 | Target: $24,481.67 | Stop-Loss: $15,360.00 | R:R 0.2:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-052",
+        "title": "TRADE ALERT: Buy S&P 500 - Target $7,429.19",
+        "description": "Signal: BUY (score 58/100) | Entry: $6,878.88 | Target: $7,429.19 | Stop-Loss: $5,044.00 | R:R 0.3:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-051",
+        "title": "TRADE ALERT: Buy GBP/USD - Target $1.35",
+        "description": "Signal: BUY (score 35/100) | Entry: $1.35 | Target: $1.35 | Stop-Loss: $1.20 | R:R 0.0:1",
+        "priority": "high",
+        "created": "2026-03-01"
+      },
+      {
+        "id": "AEGIS-050",
+        "title": "TRADE ALERT: Buy Polkadot - Target $15.00",
+        "description": "Signal: STRONG BUY (score 63/100) | Entry: $1.30 | Target: $15.00 | Stop-Loss: $4.60 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-049",
+        "title": "TRADE ALERT: Buy Dogecoin - Target $0.50",
+        "description": "Signal: STRONG BUY (score 63/100) | Entry: $0.09 | Target: $0.50 | Stop-Loss: $0.14 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-048",
+        "title": "TRADE ALERT: Buy Disney - Target $130.00",
+        "description": "Signal: BUY (score 48/100) | Entry: $79.07 | Target: $130.00 | Stop-Loss: $85.50 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-047",
+        "title": "TRADE ALERT: Buy Solana - Target $300.00",
+        "description": "Signal: STRONG BUY (score 63/100) | Entry: $79.07 | Target: $300.00 | Stop-Loss: $92.00 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-046",
+        "title": "TRADE ALERT: Buy Google - Target $210.00",
+        "description": "Signal: BUY (score 43/100) | Entry: $264.18 | Target: $210.00 | Stop-Loss: $142.50 | R:R -0.4:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-045",
+        "title": "TRADE ALERT: Buy Amazon - Target $230.00",
+        "description": "Signal: BUY (score 43/100) | Entry: $264.18 | Target: $230.00 | Stop-Loss: $161.50 | R:R -0.3:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-044",
+        "title": "TRADE ALERT: Buy Dow Jones - Target $45,000.00",
+        "description": "Signal: BUY (score 38/100) | Entry: $48,977.92 | Target: $45,000.00 | Stop-Loss: $36,860.00 | R:R -0.3:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-043",
+        "title": "TRADE ALERT: Buy Avalanche - Target $80.00",
+        "description": "Signal: STRONG BUY (score 63/100) | Entry: $1.30 | Target: $80.00 | Stop-Loss: $18.40 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-042",
+        "title": "TRADE ALERT: Buy UnitedHealth - Target $600.00",
+        "description": "Signal: BUY (score 38/100) | Entry: $293.27 | Target: $600.00 | Stop-Loss: $427.50 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-041",
+        "title": "TRADE ALERT: Buy Berkshire - Target $500.00",
+        "description": "Signal: BUY (score 38/100) | Entry: $504.95 | Target: $500.00 | Stop-Loss: $380.00 | R:R -0.0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-040",
+        "title": "TRADE ALERT: Buy JPMorgan - Target $260.00",
+        "description": "Signal: BUY (score 40/100) | Entry: $402.51 | Target: $260.00 | Stop-Loss: $180.50 | R:R -0.6:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-039",
+        "title": "TRADE ALERT: Buy NVIDIA - Target $160.00",
+        "description": "Signal: BUY (score 50/100) | Entry: $177.19 | Target: $160.00 | Stop-Loss: $85.50 | R:R -0.2:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-038",
+        "title": "TRADE ALERT: Buy USD/CHF - Target $0.95",
+        "description": "Signal: BUY (score 45/100) | Entry: $0.71 | Target: $0.95 | Stop-Loss: $0.83 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-037",
+        "title": "TRADE ALERT: Buy Corn - Target $550.00",
+        "description": "Signal: BUY (score 35/100) | Entry: $438.75 | Target: $550.00 | Stop-Loss: $388.00 | R:R 2.2:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-036",
+        "title": "TRADE ALERT: Buy Palladium - Target $1,200.00",
+        "description": "Signal: BUY (score 45/100) | Entry: $106.04 | Target: $1,200.00 | Stop-Loss: $873.00 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-035",
+        "title": "TRADE ALERT: Buy Chainlink - Target $40.00",
+        "description": "Signal: STRONG BUY (score 65/100) | Entry: $2.86 | Target: $40.00 | Stop-Loss: $11.04 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-034",
+        "title": "TRADE ALERT: Buy XRP - Target $5.00",
+        "description": "Signal: STRONG BUY (score 63/100) | Entry: $1.30 | Target: $5.00 | Stop-Loss: $1.38 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-033",
+        "title": "TRADE ALERT: Buy Tesla - Target $400.00",
+        "description": "Signal: STRONG BUY (score 60/100) | Entry: $177.19 | Target: $400.00 | Stop-Loss: $190.00 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-032",
+        "title": "TRADE ALERT: Buy Meta - Target $650.00",
+        "description": "Signal: STRONG BUY (score 60/100) | Entry: $177.19 | Target: $650.00 | Stop-Loss: $427.50 | R:R 0:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-031",
+        "title": "TRADE ALERT: Buy Microsoft - Target $480.00",
+        "description": "Signal: BUY (score 38/100) | Entry: $392.74 | Target: $480.00 | Stop-Loss: $332.50 | R:R 1.4:1",
+        "priority": "high",
+        "created": "2026-02-28"
+      },
+      {
+        "id": "AEGIS-030",
+        "title": "TRADE ALERT: Buy Copper - Target $7.50",
+        "description": "Signal: BUY (score 55/100) | Entry: $6.12 | Target: $7.50 | Stop-Loss: $4.84 | R:R 1.1:1",
+        "priority": "high",
+        "created": "2026-02-27"
+      },
+      {
+        "id": "AEGIS-029",
+        "title": "TRADE ALERT: Buy EUR/USD - Target $1.15",
+        "description": "Signal: BUY (score 45/100) | Entry: $6,946.89 | Target: $1.15 | Stop-Loss: $1.03 | R:R -1.0:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-028",
+        "title": "TRADE ALERT: Buy Oil - Target $85.00",
+        "description": "Signal: BUY (score 35/100) | Entry: $87.99 | Target: $85.00 | Stop-Loss: $61.75 | R:R -0.1:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-027",
+        "title": "TRADE ALERT: Buy Platinum - Target $1,200.00",
+        "description": "Signal: BUY (score 40/100) | Entry: $2,288.40 | Target: $1,200.00 | Stop-Loss: $864.00 | R:R -0.8:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-026",
+        "title": "TRADE ALERT: Buy Copper - Target $5.00",
+        "description": "Signal: STRONG BUY (score 60/100) | Entry: $6.01 | Target: $5.00 | Stop-Loss: $3.61 | R:R -0.4:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-025",
+        "title": "TRADE ALERT: Buy NASDAQ - Target $20,000.00",
+        "description": "Signal: BUY (score 50/100) | Entry: $23,152.08 | Target: $20,000.00 | Stop-Loss: $15,360.00 | R:R -0.4:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-024",
+        "title": "TRADE ALERT: Buy S&P 500 - Target $6,500.00",
+        "description": "Signal: BUY (score 45/100) | Entry: $6,946.13 | Target: $6,500.00 | Stop-Loss: $5,044.00 | R:R -0.2:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-023",
+        "title": "TRADE ALERT: Buy Natural Gas - Target $4.50",
+        "description": "Signal: BUY (score 55/100) | Entry: $2.81 | Target: $4.50 | Stop-Loss: $2.63 | R:R 9.5:1",
+        "priority": "high",
+        "created": "2026-02-26"
+      },
+      {
+        "id": "AEGIS-022",
+        "title": "DISCOVERY: BUY Platinum Futures — Target $2,500.00",
+        "description": "Score: 35/100 | Entry: $2,306.3000 | Target: $2,500.0000 | Stop: $1,710.0000 | R:R 0.3:1 | Category: metal",
+        "priority": "medium",
+        "created": "2026-02-25"
+      },
+      {
+        "id": "AEGIS-021",
+        "title": "DISCOVERY: BUY Natural Gas — Target $5.00",
+        "description": "Score: 35/100 | Entry: $2.8700 | Target: $5.0000 | Stop: $2.3000 | R:R 3.7:1 | Category: energy",
+        "priority": "medium",
+        "created": "2026-02-25"
+      },
+      {
+        "id": "AEGIS-020",
+        "title": "DISCOVERY: BUY EUR/USD Forex — Target $1.25",
+        "description": "Score: 45/100 | Entry: $1.1756 | Target: $1.2500 | Stop: $1.0780 | R:R 0.8:1 | Category: forex",
+        "priority": "medium",
+        "created": "2026-02-19"
+      },
+      {
+        "id": "AEGIS-019",
+        "title": "TRADE ALERT: Buy BTC - Target $95,000.00",
+        "description": "Signal: BUY (score 40/100) | Entry: $66,068.73 | Target: $95,000.00 | Stop-Loss: $58,900.00 | R:R 4.0:1",
+        "priority": "high",
+        "created": "2026-02-19"
+      },
+      {
+        "id": "AEGIS-018",
+        "title": "TRADE ALERT: Buy Gold - Target $5,400.00",
+        "description": "Signal: BUY (score 35/100) | Entry: $5,013.70 | Target: $5,400.00 | Stop-Loss: $4,272.85 | R:R 0.5:1",
+        "priority": "high",
+        "created": "2026-02-09"
+      },
+      {
+        "id": "AEGIS-017",
+        "title": "DISCOVERY: BUY Copper Futures — Target $5.50",
+        "description": "Score: 35/100 | Entry: $5.8820 | Target: $5.5000 | Stop: $3.6100 | R:R -0.2:1 | Category: metal",
+        "priority": "medium",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-016",
+        "title": "DISCOVERY: BUY NASDAQ Composite — Target $20,000.00",
+        "description": "Score: 40/100 | Entry: $23,031.2109 | Target: $20,000.0000 | Stop: $14,400.0000 | R:R -0.4:1 | Category: index",
+        "priority": "medium",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-015",
+        "title": "DISCOVERY: BUY S&P 500 Index — Target $6,500.00",
+        "description": "Score: 35/100 | Entry: $6,932.2998 | Target: $6,500.0000 | Stop: $4,656.0000 | R:R -0.2:1 | Category: index",
+        "priority": "medium",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-013",
+        "title": "TRADE ALERT: Buy Silver - Target $95.00",
+        "description": "Signal: BUY (score 40/100) | Entry: $76.89 | Target: $95.00 | Stop-Loss: $59.52 | R:R 1.0:1",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-011",
+        "title": "TRADE ALERT: Buy ETH - Target $4,500.00",
+        "description": "Signal: BUY (score 35/100) | Entry: $2,127.17 | Target: $4,500.00 | Stop-Loss: $2,090.00 | R:R 63.8:1",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-008",
+        "title": "Add strategy results to dashboard",
+        "description": "Extend dashboard/app.py with a strategy performance page showing charts and metrics.",
+        "priority": "medium",
+        "created": "2026-02-08"
+      }
+    ],
+    "In Progress": [],
+    "Done": [
+      {
+        "id": "AEGIS-014",
+        "title": "Token usage tracking & budget monitoring",
+        "description": "Token manager, cost calculator, Budget & API dashboard tab with agent cost charts, budget guard, and efficiency mode toggle.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-010",
+        "title": "Build Agent Research Command Center",
+        "description": "Interactive Streamlit hub with research file browser, clickable kanban, live log stream, and 5-second auto-refresh.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-009",
+        "title": "Research Gold Market Sentiment & Technicals",
+        "description": "Fetch XAU/USD data, compute 50/200 SMA, research Fed/inflation macro drivers, produce research report with strategy recommendation.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-001",
+        "title": "Create project structure",
+        "description": "Set up /src, /docs, /memory, /dashboard directories and seed files.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-002",
+        "title": "Build Streamlit kanban dashboard",
+        "description": "Visualize kanban_board.json in a Streamlit app with status columns.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-003",
+        "title": "Implement memory manager",
+        "description": "Create memory_manager.py to read/write error lessons to error_lessons.json.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-004",
+        "title": "Fetch BTC historical price data",
+        "description": "Use yfinance or CoinGecko API to download BTC-USD OHLCV data and save to src/data/.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-005",
+        "title": "Build BTC strategy engine",
+        "description": "Implement SMA crossover, RSI, MACD, and Bollinger Band strategies in src/strategies.py with pluggable architecture.",
+        "priority": "high",
+        "created": "2026-02-08"
+      },
+      {
+        "id": "AEGIS-006",
+        "title": "Build backtesting framework",
+        "description": "Create src/backtester.py to run strategies against historical data and compute Sharpe ratio, max drawdown, win rate.",
+        "priority": "high",
+        "created": "2026-02-08"
+      }
+    ]
+  }
+}

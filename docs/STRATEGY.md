@@ -1,0 +1,140 @@
+# Project Aegis: Strategic Growth Plan
+## From Single-User Terminal to Multi-User SaaS
+
+---
+
+## 1. PRICING TIERS
+
+### FREE — "Recruit" ($0/mo)
+- 5 assets, 3 scans/day, basic signals (BUY/SELL/NEUTRAL only)
+- Confidence shown as Low/Medium/High (no numeric %)
+- Manual paper trading only (10 positions max)
+- Headlines only (no sentiment scores), 3 chart indicators
+- 60s refresh, 30-day history, 2 alerts
+
+### PRO — "Operator" ($29/mo or $249/yr)
+- 50 assets, unlimited scans, full signal spectrum + numeric confidence
+- Autonomous bot, social sentiment, geopolitical monitor
+- All 30+ chart indicators, full morning brief, 1-year calendar
+- Portfolio optimizer, risk dashboard, trade journal + CSV export
+- 5 backtests/day, HTML reports, 10s refresh, 25 alerts
+
+### ENTERPRISE — "Command" ($199/seat/mo, min 5 seats)
+- Everything Pro + team workspace (25 seats), REST + WebSocket API
+- Custom asset universe, unlimited backtests, custom signal weights
+- White-label embedding, SSO/SAML, audit logs, priority support
+- Dedicated infrastructure, bulk data export
+
+---
+
+## 2. TARGET CUSTOMERS
+
+1. **Crypto-Native Retail** (40% Pro): Age 22-40, currently on TradingView free + CT
+2. **Self-Directed Investors** (30% Pro): Age 30-55, 50K-500K AUM, uses SA + Finviz
+3. **Prop Trading Desks** (60% Enterprise): 5-50 person teams, expensive terminals
+4. **Fintech Builders** (40% Enterprise): Need signal API infrastructure
+
+---
+
+## 3. REVENUE PROJECTIONS (Conservative)
+
+| Month | Free | Pro | Enterprise Seats | MRR |
+|-------|------|-----|-----------------|-----|
+| 3     | 500  | 15  | 0               | $435 |
+| 6     | 2K   | 80  | 10              | $4,310 |
+| 12    | 8K   | 350 | 50              | $20,000 |
+| 18    | 20K  | 1K  | 150             | $58,850 |
+| 24    | 50K  | 3K  | 400             | $166,600 |
+
+Path to $1M ARR: ~2,900 Pro subscribers (18-24 months)
+
+---
+
+## 4. COMPETITIVE MOAT
+
+1. **Integrated Intelligence Stack**: Only product combining AI signals + news + social + geo + macro + autonomous trading at retail price
+2. **Prediction Track Record**: Signal Report Card = auditable accuracy proof
+3. **Learning Loop**: MarketLearner + Chief Monitor = self-improving system
+4. **Cost Structure**: Free data sources (yfinance, RSS, Reddit) = profitable at $29/mo
+5. **Community + Open Core**: Open-source scanner → contributor funnel → paid tiers
+
+---
+
+## 5. TECHNICAL MIGRATION ROADMAP
+
+### Current: Single-user, JSON files, single Streamlit process
+### Target: Multi-user SaaS with PostgreSQL + Redis + FastAPI
+
+**Phase 1 (Month 1-2): "Make It Multi-User"**
+- Build DataStore abstraction layer (3 days)
+- Replace 150-200 JSON read/write calls with DataStore (5 days)
+- Basic auth via streamlit-authenticator (3 days)
+- User profiles + preferences (2 days)
+- Shared market data service with Redis cache (3 days)
+- PostgreSQL schema + migration (5 days)
+- Cloud deploy with Docker Compose (2 days)
+
+**Phase 2 (Month 3-4): "Make It Pay"**
+- Stripe subscription billing (3 days)
+- Feature gating system (3 days)
+- Google/GitHub OAuth (2 days)
+- Landing page + Product Hunt launch (5 days)
+
+**Phase 3 (Month 5-8): "Make It Sticky"**
+- Email notifications (daily brief, alerts)
+- Broker API integration (Alpaca, IBKR)
+- FastAPI auth gateway (replace streamlit-authenticator)
+- API endpoints for Enterprise
+
+**Phase 4 (Month 9-12): "Make It Scale"**
+- Enterprise auth (SAML, MFA)
+- Team workspaces
+- React frontend prototype
+- Kubernetes auto-scaling
+
+---
+
+## 6. USER DATA ISOLATION
+
+### Per-User Data (needs isolation):
+- Watchlists, Paper portfolios, Predictions, Bot configs
+- Alerts, Custom strategies, Research reports, Settings
+
+### Shared Data (fetch once, serve all):
+- Market prices, News articles, Economic calendar
+- Geopolitical events, Macro regime, Social sentiment
+
+---
+
+## 7. SCALING COSTS
+
+| Users    | Infrastructure                    | Monthly |
+|----------|-----------------------------------|---------|
+| 1-100    | Single VPS (8GB, 4 vCPU)        | $40     |
+| 100-1K   | 2 app servers + managed PG + Redis | $200   |
+| 1K-5K    | 4 servers + RDS + ElastiCache    | $600    |
+| 5K-20K   | Kubernetes cluster + managed svcs | $2,000  |
+| 20K+     | React migration + K8s            | $5,000+ |
+
+Streamlit ceiling: ~5,000-10,000 concurrent users. Plan React at 3K.
+
+---
+
+## 8. GO-TO-MARKET
+
+1. **Community-Led** (M1-6): Product Hunt, Reddit, YouTube, Discord, open-source core
+2. **Content + SEO** (M3-12): Blog, newsletter (weekly Aegis brief), targeted keywords
+3. **Partnerships** (M6-18): Broker APIs, trading education platforms, accelerators
+4. **Enterprise Sales** (M12+): Prop shops, RIAs, conferences
+
+---
+
+## 9. THREE DECISIONS NOW
+
+1. **Build DataStore abstraction layer first** — highest-leverage technical change
+2. **Launch free tier immediately** after multi-user works (don't wait for gating)
+3. **Keep Streamlit for now** — plan React for Month 9+ when sessions > 2K
+
+---
+
+*Generated by Aegis Strategy Agent, Feb 2026*

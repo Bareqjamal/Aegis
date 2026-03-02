@@ -1,0 +1,26 @@
+{
+  "value": 50,
+  "label": "Neutral",
+  "color": "#8b949e",
+  "crypto_fg": 10,
+  "social_score": 0.167,
+  "regime_score": 75,
+  "components": {
+    "crypto_fg": {
+      "value": 10,
+      "weight": 0.3,
+      "source": "Alternative.me"
+    },
+    "social": {
+      "value": 58,
+      "weight": 0.3,
+      "source": "Social Sentiment Cache"
+    },
+    "regime": {
+      "value": 75,
+      "weight": 0.4,
+      "source": "Macro Regime Detector"
+    }
+  },
+  "timestamp": "2026-03-02T09:32:25.111948+00:00"
+}
