@@ -192,8 +192,8 @@ class AutoTradeConfig:
 class DashboardConfig:
     VERSION = "6.0"
     APP_TITLE = "Aegis Terminal"
-    LIVE_REFRESH_MS = 10_000
-    SLOW_REFRESH_MS = 30_000
+    LIVE_REFRESH_MS = 30_000      # Was 10s → 30s (logs/monitor) — reduces rerun spam
+    SLOW_REFRESH_MS = 60_000      # Was 30s → 60s (advisor/watchlist/trading) — eliminates flicker
     LOG_TAIL_LINES = 50
     MAX_ACTIVITY_ENTRIES = 100
     MAX_RECENT_PREDICTIONS = 15

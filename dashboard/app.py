@@ -767,6 +767,7 @@ def detect_asset_from_filename(path: Path) -> str | None:
     return None
 
 
+@st.cache_data(ttl=120, show_spinner=False)
 def load_chart(asset: str, chart_type: str) -> go.Figure | None:
     chart_path = CHART_DIR / f"{asset}_{chart_type}.json"
     if not chart_path.exists():
@@ -777,6 +778,7 @@ def load_chart(asset: str, chart_type: str) -> go.Figure | None:
         return None
 
 
+@st.cache_data(ttl=120, show_spinner=False)
 def load_news(asset: str) -> dict | None:
     news_path = NEWS_DIR / f"news_{asset}.json"
     if not news_path.exists():
@@ -790,8 +792,9 @@ def load_news(asset: str) -> dict | None:
 USER_WATCHLIST_FILE = PROJECT_ROOT / "src" / "data" / "user_watchlist.json"
 
 
+@st.cache_data(ttl=30, show_spinner=False)
 def _load_raw_watchlist_summary() -> dict:
-    """Load the raw watchlist_summary.json (scanner output)."""
+    """Load the raw watchlist_summary.json (scanner output). Cached 30s."""
     if not WATCHLIST_FILE.exists():
         return {}
     try:
@@ -811,7 +814,7 @@ def load_watchlist_summary() -> dict:
     """
     import time as _time_mod
     now = _time_mod.time()
-    if _watchlist_cache["data"] is not None and (now - _watchlist_cache["ts"]) < 10:
+    if _watchlist_cache["data"] is not None and (now - _watchlist_cache["ts"]) < 30:
         return _watchlist_cache["data"]
 
     scanned = _load_raw_watchlist_summary()
@@ -853,8 +856,9 @@ def load_watchlist_summary() -> dict:
     return merged
 
 
+@st.cache_data(ttl=60, show_spinner=False)
 def load_user_watchlist() -> dict:
-    """Load the user-configurable watchlist (all assets)."""
+    """Load the user-configurable watchlist (all assets). Cached 60s."""
     if not USER_WATCHLIST_FILE.exists():
         return {}
     try:
@@ -1069,11 +1073,11 @@ def get_sparklines_batch(tickers: list[str]) -> dict[str, str]:
     return result
 
 
-@st.cache_data(ttl=60, show_spinner=False)
+@st.cache_data(ttl=120, show_spinner=False)
 def _fetch_live_prices_cached(ticker_str: str, ticker_names: str) -> dict:
     """Internal cached price fetch. Keyed by ticker string for cache.
 
-    Cached for 60 seconds to prevent yfinance spam on page switches.
+    Cached for 120 seconds to prevent yfinance spam on page switches.
     Uses individual Ticker().history() calls (one per ticker) to avoid
     the batch yf.download() cross-contamination bug. Fetches sequentially
     with a short timeout to keep the page responsive.
@@ -1188,7 +1192,9 @@ def fetch_live_prices(watchlist: dict) -> dict:
     return fallback
 
 
+@st.cache_data(ttl=120, show_spinner=False)
 def load_predictions() -> dict:
+    """Load market predictions. Cached 120s."""
     if not PREDICTIONS_FILE.exists():
         return {"predictions": [], "stats": {"total": 0, "validated": 0, "correct": 0}}
     try:
@@ -1197,7 +1203,9 @@ def load_predictions() -> dict:
         return {"predictions": [], "stats": {}}
 
 
+@st.cache_data(ttl=120, show_spinner=False)
 def load_market_lessons() -> dict:
+    """Load market lessons. Cached 120s."""
     if not MARKET_LESSONS_FILE.exists():
         return {"lessons": [], "rules": []}
     try:
@@ -1206,7 +1214,9 @@ def load_market_lessons() -> dict:
         return {"lessons": [], "rules": []}
 
 
+@st.cache_data(ttl=120, show_spinner=False)
 def load_hindsight() -> dict:
+    """Load hindsight simulations. Cached 120s."""
     if not HINDSIGHT_FILE.exists():
         return {"simulations": [], "stats": {"total": 0, "correct": 0, "incorrect": 0, "neutral": 0, "accuracy": 0}}
     try:
