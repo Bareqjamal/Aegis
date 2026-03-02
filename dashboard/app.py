@@ -8,6 +8,7 @@ Budget, Agent Monitor, and Live Logs.
 import html
 import importlib
 import json
+import os
 import re
 import sys
 import time
@@ -1157,16 +1158,68 @@ def _load_price_cache() -> dict:
     return {}
 
 
-def fetch_live_prices(watchlist: dict) -> dict:
-    """Fetch current prices for all watchlist assets from yfinance.
+# ---------------------------------------------------------------------------
+# Cloud Storage price reader (Google Cloud integration)
+# ---------------------------------------------------------------------------
 
-    Returns {asset_name: live_price} dict. Cached 60s. Falls back to:
-    1. Disk price cache (last known good prices, max 24h old)
-    2. Prices from watchlist_summary.json scan data
+_GCS_BUCKET = os.environ.get("AEGIS_GCS_BUCKET", "aegis-market-data")
+_GCS_ENABLED = os.environ.get("AEGIS_CLOUD_PRICES", "").lower() in ("1", "true", "yes")
+
+
+@st.cache_data(ttl=30, show_spinner=False)
+def _fetch_cloud_prices() -> dict:
+    """Fetch prices from Google Cloud Storage (updated every 2 min by Cloud Function).
+
+    Returns {asset_name: price} dict, or empty dict if GCS not available.
+    Also stashes daily_change_pct in session state.
     """
+    if not _GCS_ENABLED:
+        return {}
+    try:
+        from google.cloud import storage as _gcs
+        client = _gcs.Client()
+        bucket = client.bucket(_GCS_BUCKET)
+        blob = bucket.blob("live/prices.json")
+        if not blob.exists():
+            return {}
+        data = json.loads(blob.download_as_text())
+        prices_data = data.get("prices", {})
+
+        # Extract {name: price} and {name: change_pct}
+        prices = {}
+        changes = {}
+        for name, info in prices_data.items():
+            if isinstance(info, dict) and info.get("price"):
+                prices[name] = info["price"]
+                changes[name] = info.get("daily_change_pct", 0.0)
+
+        # Stash daily changes in session state
+        if changes:
+            st.session_state["_live_daily_changes"] = changes
+
+        return prices
+    except Exception:
+        return {}
+
+
+def fetch_live_prices(watchlist: dict) -> dict:
+    """Fetch current prices for all watchlist assets.
+
+    Priority chain:
+    0. Google Cloud Storage (if AEGIS_CLOUD_PRICES=true) — instant, no yfinance
+    1. yfinance via _fetch_live_prices_cached (120s cache)
+    2. Disk price cache (last known good prices, max 24h old)
+    3. Prices from watchlist_summary.json scan data
+    """
+    # Priority 0: Cloud prices (instant, no API call)
+    cloud = _fetch_cloud_prices()
+    if cloud and len(cloud) >= 3:
+        return cloud
+
+    # Priority 1: yfinance (blocking, 120s cache)
     tickers = {name: data.get("ticker", "") for name, data in watchlist.items() if data.get("ticker")}
     if not tickers:
-        return {}
+        return cloud if cloud else {}
     ticker_str = " ".join(tickers.values())
     ticker_names = "|".join(tickers.keys())
     live = _fetch_live_prices_cached(ticker_str, ticker_names)
